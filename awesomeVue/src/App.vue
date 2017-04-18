@@ -1,9 +1,11 @@
 <template>
   <div id="app">
     <h1>{{title}}</h1>
+    <input v-model= "newItem"></input>
+    <br></br>
     <img src="./assets/logo.png">
     <ul>
-        <li v-for = "item in items" v-bind:class = "{finished: item.isFinished}"> {{item.label}} </li>
+        <li v-for = "item in items" v-bind:class = "{finished: item.isFinished}" v-on:click= "toggleFinish(item)"> {{item.label}} </li>
     </ul>
   </div>
 </template>
@@ -34,21 +36,21 @@ export default {
       ],
       liClass: 'this is LiClass'
     }
+  },
+  methods: {
+    toggleFinish: function (item) {
+      item.isFinished = !item.isFinished
+    }
   }
 }
 
 </script>
 
 
-
-
-
 <style>
 
 .finished {
   text-decoration: underline;
-
-
 
 }
 
