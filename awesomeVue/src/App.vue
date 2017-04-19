@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>{{title}}</h1>
-    <input v-model= "newItem"></input>
+    <input v-model= "newItem" v-on:keyup.enter = "addNewItem"></input>
     <br></br>
     <img src="./assets/logo.png">
     <ul>
@@ -21,18 +21,7 @@ export default {
       title: 'Welcome to My First Vue.js App',
       msg: 'Hello world',
       items: [
-        {
-          label: 'coding',
-          isFinished: false
-        },
-        {
-          label: 'walking',
-          isFinished: true
-        },
-        {
-          label: 'reading',
-          isFinished: false
-        }
+
       ],
       liClass: 'this is LiClass'
     }
@@ -40,6 +29,15 @@ export default {
   methods: {
     toggleFinish: function (item) {
       item.isFinished = !item.isFinished
+    },
+    addNewItem: function () {
+      this.items.push({
+
+        label: this.newItem,
+        isFinished: true
+
+      })
+      this.newItem = ''
     }
   }
 }
