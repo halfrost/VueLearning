@@ -7,12 +7,15 @@
     <ul>
         <li v-for = "item in items" v-bind:class = "{finished: item.isFinished}" v-on:click= "toggleFinish(item)"> {{item.label}} </li>
     </ul>
+    <hello></hello>
   </div>
 </template>
 
 
 
 <script>
+import Store from './store.js'
+import Hello from './components/Hello'
 
 export default {
   name: 'app',
@@ -20,12 +23,21 @@ export default {
     return {
       title: 'Welcome to My First Vue.js App',
       msg: 'Hello world',
-      items: [
-
-      ],
+      items: Store.fetch(),
+      newItem: '',
       liClass: 'this is LiClass'
     }
   },
+  watch: {
+    items: {
+      handler: function (items) {
+        Store.save(items)
+      },
+      deep: true
+    }
+
+  },
+  components: { Hello },
   methods: {
     toggleFinish: function (item) {
       item.isFinished = !item.isFinished
