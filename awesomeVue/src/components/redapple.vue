@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>I am apple</h1>
+    <h1>I am red apple</h1>
     <router-view></router-view>
   </div>
 </template>
@@ -10,7 +10,7 @@ export default {
   name: 'apple',
   data () {
     return {
-      msg: 'I am apple'
+      msg: 'I am red apple'
     }
   }
 }

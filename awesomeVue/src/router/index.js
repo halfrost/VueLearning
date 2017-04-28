@@ -3,10 +3,13 @@ import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import Apple from '@/components/apple'
 import Banana from '@/components/banana'
+import RedApple from '@/components/redapple'
 
 Vue.use(Router)
 
 export default new Router({
+
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -15,6 +18,13 @@ export default new Router({
     },
     {
       path: '/apple',
+      children: [
+        {
+          path: 'red',
+          name: 'redApple',
+          component: RedApple
+        }
+      ],
       component: Apple
     },
     {
