@@ -20,5 +20,5 @@ new Vue({
   router,
   template: '<Layout/>',
   components: { Layout }
-  // render: h => h(App)
+//  render: h => h(App)
 })

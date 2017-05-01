@@ -7,7 +7,7 @@
     <b-nav-toggle target="nav_collapse"></b-nav-toggle>
 
     <b-link class="navbar-brand" to="#">
-      <span>BootstrapVue</span>
+      <span>Swift 老司机</span>
     </b-link>
 
     <b-collapse is-nav id="nav_collapse">
@@ -44,9 +44,9 @@
   </b-navbar>
 </div>
 
-    <nav class="navbar navbar-inverse " role="navigation">
+    <!-- <nav class="navbar navbar-inverse " role="navigation">
       <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
+
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -69,7 +69,7 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <div class="app-content">
       <keep-alive>
         <router-view></router-view>
@@ -87,7 +87,6 @@
 <script>
 export default {
   components: {
-
   },
   data () {
     return {

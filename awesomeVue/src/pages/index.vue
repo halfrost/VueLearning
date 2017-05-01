@@ -1,123 +1,13 @@
 <template>
 <div class="book-content">
+
   <div id="__wrapper">
     <main class="container">
       <p class="dim text-center page-header">欢迎您 ydz627@gmail.com，您可以下载已购内容或进行新的购买</p>
-      <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
-          <div class="card">
-            <div class="card-image">
-              <a href="/products/swifter-tips"><img src="../assets/iOSCover_1.png"></a>
-            </div>
-            <div class="card-action">
-              <div class="input-group">
-                <span class="input-group-addon">¥</span>
-                <input type="text" class="form-control" placeholder="49.00" disabled>
 
-                <span class="input-group-btn">
-                            <button class="dropdown btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">
-                                下载
-                                <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu products-dropdown-menu">
-                  <li><a href="/loot/swifter-tips/?download_type=pdf">PDF 格式</a></li>
-                  <li><a href="/loot/swifter-tips/?download_type=mobi">mobi 格式</a></li>
-                  <li><a href="/loot/swifter-tips/?download_type=epub">epub 格式</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="/loot/swifter-tips/">打包下载</a></li>
-                </ul>
-                <a href="/products/swifter-tips" class="btn btn-default" type="button">详细</a>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
-          <div class="card">
-            <div class="card-image">
-              <a href="/products/functional-swift"><img src="../assets/iOSCover_1.png"></a>
-            </div>
-            <div class="card-action">
-              <div class="input-group">
-                <span class="input-group-addon">¥</span>
-                <input type="text" class="form-control" placeholder="69.00" disabled>
-
-                <span class="input-group-btn">
-                            <button class="dropdown btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">
-                                下载
-                                <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu products-dropdown-menu">
-                  <li><a href="/loot/functional-swift/?download_type=pdf">PDF 格式</a></li>
-                  <li><a href="/loot/functional-swift/?download_type=mobi">mobi 格式</a></li>
-                  <li><a href="/loot/functional-swift/?download_type=epub">epub 格式</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="/loot/functional-swift/">打包下载</a></li>
-                </ul>
-                <a href="/products/functional-swift" class="btn btn-default" type="button">详细</a>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
-          <div class="card">
-            <div class="card-image">
-              <a href="/products/core-data"><img src="../assets/iOSCover_1.png"></a>
-            </div>
-            <div class="card-action">
-              <div class="input-group">
-                <span class="input-group-addon">¥</span>
-                <input type="text" class="form-control" placeholder="69.00" disabled>
-
-                <span class="input-group-btn">
-                            <button class="dropdown btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">
-                                下载
-                                <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu products-dropdown-menu">
-                  <li><a href="/loot/core-data/?download_type=pdf">PDF 格式</a></li>
-                  <li><a href="/loot/core-data/?download_type=mobi">mobi 格式</a></li>
-                  <li><a href="/loot/core-data/?download_type=epub">epub 格式</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="/loot/core-data/">打包下载</a></li>
-                </ul>
-                <a href="/products/core-data" class="btn btn-default" type="button">详细</a>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
-          <div class="card">
-            <div class="card-image">
-              <a href="/products/advanced-swift"><img src="../assets/iOSCover_1.png"></a>
-            </div>
-            <div class="card-action">
-              <div class="input-group">
-                <span class="input-group-addon">¥</span>
-                <input type="text" class="form-control" placeholder="69.00" disabled>
-
-                <span class="input-group-btn">
-                            <button class="dropdown btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">
-                                下载
-                                <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu products-dropdown-menu">
-                  <li><a href="/loot/advanced-swift/?download_type=pdf">PDF 格式</a></li>
-                  <li><a href="/loot/advanced-swift/?download_type=mobi">mobi 格式</a></li>
-                  <li><a href="/loot/advanced-swift/?download_type=epub">epub 格式</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="/loot/advanced-swift/">打包下载</a></li>
-                </ul>
-                <a href="/products/advanced-swift" class="btn btn-default" type="button">详细</a>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="row" >
+          <book-card v-for="item in bookInfo" :key="item.id" :book-cover-image=item.bookCoverImage :book-price="item.bookPrice"></book-card>
       </div>
-
     </main>
 
   </div>
@@ -125,10 +15,31 @@
 </template>
 
 <script>
+import BookCard from '@/components/bookCard'
 export default {
+  components: {
+    BookCard
+  },
   data () {
     return {
-      currentDate: new Date()
+      bookInfo: [
+        {
+          bookCoverImage: '../static/iOSCover_1.png',
+          bookPrice: '49.00'
+        },
+        {
+          bookCoverImage: '../static/iOSCover_1.png',
+          bookPrice: '89.00'
+        },
+        {
+          bookCoverImage: '../static/iOSCover_1.png',
+          bookPrice: '59.00'
+        },
+        {
+          bookCoverImage: '../static/iOSCover_1.png',
+          bookPrice: '69.00'
+        }
+      ]
     }
   }
 }
