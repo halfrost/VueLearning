@@ -19,6 +19,8 @@ new Vue({
   el: '#app',
   router,
   template: '<Layout/>',
-  components: { Layout }
-//  render: h => h(App)
+  components: {
+    Layout
+  }
+  //  render: h => h(App)
 })

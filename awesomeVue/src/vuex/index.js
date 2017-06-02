@@ -8,15 +8,15 @@ export default new Vuex.Store({
     totalPrice: 0
   },
   actions: {
-    increase (context, price) {
+    increase(context, price) {
       context.commit('increment', price)
     }
   },
   mutations: {
-    increment (state, price) {
+    increment(state, price) {
       state.totalPrice += price
     },
-    decrement (state, price) {
+    decrement(state, price) {
       state.totalPrice -= price
     }
   }

@@ -1,50 +1,42 @@
 <template>
-  <div>
+<div>
 
-    <div id="app">
-  <b-navbar toggleable type="inverse" variant="success">
+  <div id="app">
+    <b-navbar toggleable type="inverse" variant="success">
 
-    <b-nav-toggle target="nav_collapse"></b-nav-toggle>
+      <b-nav-toggle target="nav_collapse"></b-nav-toggle>
 
-    <b-link class="navbar-brand" to="#">
-      <span>Swift 老司机</span>
-    </b-link>
+      <b-link class="navbar-brand" to="#">
+        <span>Swift 老司机</span>
+      </b-link>
 
-    <b-collapse is-nav id="nav_collapse">
+      <b-collapse is-nav id="nav_collapse">
 
-      <b-nav is-nav-bar>
-        <b-nav-item>Support</b-nav-item>
-        <b-nav-item>Docs</b-nav-item>
-        <b-nav-item>Contact Us</b-nav-item>
-      </b-nav>
+        <b-nav is-nav-bar>
+          <b-nav-item>期刊</b-nav-item>
+          <b-nav-item>书籍</b-nav-item>
+          <b-nav-item>购物车</b-nav-item>
+        </b-nav>
 
-      <b-nav is-nav-bar class="ml-auto">
+        <b-nav is-nav-bar class="ml-auto">
 
-        <!-- Navbar dropdowns -->
-        <b-nav-item-dropdown text="Lang" right-alignment>
-          <b-dropdown-item to="#">EN</b-dropdown-item>
-          <b-dropdown-item to="#">ES</b-dropdown-item>
-          <b-dropdown-item to="#">RU</b-dropdown-item>
-          <b-dropdown-item to="#">FA</b-dropdown-item>
-        </b-nav-item-dropdown>
+          <b-nav-item-dropdown right-alignment>
 
-        <b-nav-item-dropdown right-alignment>
+            <!-- Using text slot -->
+            <template slot="text">
+          <span style="font-weight: bold;">登录</span>
+             </template>
 
-          <!-- Using text slot -->
-          <template slot="text">
-            <span style="font-weight: bold;">User</span>
-          </template>
+            <b-dropdown-item to="#">Profile</b-dropdown-item>
+            <b-dropdown-item to="#">Signout</b-dropdown-item>
+          </b-nav-item-dropdown>
 
-          <b-dropdown-item to="#">Profile</b-dropdown-item>
-          <b-dropdown-item to="#">Signout</b-dropdown-item>
-        </b-nav-item-dropdown>
+        </b-nav>
+      </b-collapse>
+    </b-navbar>
+  </div>
 
-      </b-nav>
-    </b-collapse>
-  </b-navbar>
-</div>
-
-    <!-- <nav class="navbar navbar-inverse " role="navigation">
+  <!-- <nav class="navbar navbar-inverse " role="navigation">
       <div class="container">
 
         <div class="navbar-header">
@@ -70,24 +62,23 @@
         </div>
       </div>
     </nav> -->
-    <div class="app-content">
-      <keep-alive>
-        <router-view></router-view>
-      </keep-alive>
-    </div>
-    <div class="app-foot">
-      <span>© 2017 <a href='https://halfrost.com'>Halfrost's Field | 冰霜之地</a> & <a href=''>这是一个神秘的项目</a></span>
-      <span>本站由 <a href='https://halfrost.com'>@halfrost</a> 创建</span>
-    </div>
-
-
+  <div class="app-content">
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
+  <div class="app-foot">
+    <span>© 2017 <a href='https://halfrost.com'>Halfrost's Field | 冰霜之地</a> & <a href=''>这是一个神秘的项目</a></span>
+    <span>本站由 <a href='https://halfrost.com'>@halfrost</a> 创建</span>
+  </div>
+
+
+</div>
 </template>
 
 <script>
 export default {
-  components: {
-  },
+  components: {},
   data () {
     return {
       isShowAboutDialog: false,
@@ -114,7 +105,6 @@ export default {
     }
   }
 }
-
 </script>
 
 <style>
@@ -122,6 +112,7 @@ export default {
    v2.0 | 20110126
    License: none (public domain)
 */
+
 @import '../style/style.css';
 @import '../style/bootstrap-flat.min.css';
 
