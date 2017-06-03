@@ -77,7 +77,7 @@
     </keep-alive>
   </div>
   <div class="app-foot">
-    <span>© 2017 <a href='https://halfrost.com'>Halfrost's Field | 冰霜之地</a> & <a href=''>这是一个神秘的项目</a></span>
+    <span>© 2017 <a href='https://onevcat.com/'>OneV's Den</a> & <a href='https://objccn.io/'>ObjC 中国</a></span>
     <span>本站由 <a href='https://halfrost.com'>@halfrost</a> 创建</span>
   </div>
 
