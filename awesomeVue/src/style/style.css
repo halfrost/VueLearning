@@ -54,7 +54,12 @@ button:hover {
 }
 
 .container {
-  max-width: 980px
+  max-width: 980px;
+}
+@media (max-width: 767px) {
+  .navbar-container {
+    margin-left: 0;
+  }
 }
 
 .dim {

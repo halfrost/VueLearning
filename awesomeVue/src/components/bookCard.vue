@@ -7,9 +7,6 @@
     <div class="card-action">
       <b-input-group left="¥">
         <b-form-input type="text" class="form-control" :placeholder=bookPrice disabled></b-form-input>
-        <!-- <b-input-group-button slot="right">
-
-            </b-input-group-button> -->
         <b-dropdown text="下载" variant="success" right>
           <b-dropdown-item><a href="/loot/swifter-tips/?download_type=pdf">PDF 格式</a></b-dropdown-item>
           <b-dropdown-item><a href="/loot/swifter-tips/?download_type=mobi">mobi 格式</a></b-dropdown-item>

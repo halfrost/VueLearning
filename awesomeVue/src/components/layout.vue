@@ -2,38 +2,43 @@
 <div>
 
   <div id="app">
-    <b-navbar toggleable type="inverse" variant="success">
+
+    <b-navbar toggleable>
 
       <b-nav-toggle target="nav_collapse"></b-nav-toggle>
+      <div class="container navbar-container">
+        <b-link class="navbar-brand" to="#">
+          <span class="nav-text">[@] ObjC 中国</span>
+        </b-link>
 
-      <b-link class="navbar-brand" to="#">
-        <span>Swift 老司机</span>
-      </b-link>
+        <b-collapse is-nav id="nav_collapse">
 
-      <b-collapse is-nav id="nav_collapse">
+          <b-nav is-nav-bar>
+            <b-link class="nav-link" to="#">
+              <span class="nav-text">[@] ObjC 中国</span>
+            </b-link>
+            <b-nav-item href="/issues" :active-class="activeClass">期刊</b-nav-item>
+            <b-nav-item href="/products">书籍</b-nav-item>
+            <b-nav-item href="/goods">购物车</b-nav-item>
+          </b-nav>
+          <b-nav is-nav-bar class="ml-auto">
 
-        <b-nav is-nav-bar>
-          <b-nav-item>期刊</b-nav-item>
-          <b-nav-item>书籍</b-nav-item>
-          <b-nav-item>购物车</b-nav-item>
-        </b-nav>
+            <b-nav-item-dropdown right-alignment>
 
-        <b-nav is-nav-bar class="ml-auto">
-
-          <b-nav-item-dropdown right-alignment>
-
-            <!-- Using text slot -->
-            <template slot="text">
+              <!-- Using text slot -->
+              <template slot="text">
           <span style="font-weight: bold;">登录</span>
              </template>
 
-            <b-dropdown-item to="#">Profile</b-dropdown-item>
-            <b-dropdown-item to="#">Signout</b-dropdown-item>
-          </b-nav-item-dropdown>
+              <!-- <b-dropdown-item to="#">Profile</b-dropdown-item>
+            <b-dropdown-item to="#">Signout</b-dropdown-item> -->
+            </b-nav-item-dropdown>
+          </b-nav>
 
-        </b-nav>
-      </b-collapse>
+        </b-collapse>
+      </div>
     </b-navbar>
+    <!-- </div> -->
   </div>
 
   <!-- <nav class="navbar navbar-inverse " role="navigation">
@@ -79,28 +84,29 @@
 <script>
 export default {
   components: {},
-  data () {
+  data() {
     return {
       isShowAboutDialog: false,
       isShowLogDialog: false,
       isShowRegDialog: false,
-      username: ''
+      username: '',
+      activeClass: 'navbar-item-select'
     }
   },
   methods: {
-    aboutClick () {
+    aboutClick() {
       this.isShowAboutDialog = true
     },
-    logClick () {
+    logClick() {
       this.isShowLogDialog = true
     },
-    regClick () {
+    regClick() {
       this.isShowRegDialog = true
     },
-    closeDialog (attr) {
+    closeDialog(attr) {
       this[attr] = false
     },
-    onSuccessLog (data) {
+    onSuccessLog(data) {
 
     }
   }
@@ -108,11 +114,6 @@ export default {
 </script>
 
 <style>
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 @import '../style/style.css';
 @import '../style/bootstrap-flat.min.css';
 
@@ -129,12 +130,35 @@ export default {
   background: #e3e4e8;
   clear: both;
   margin-top: 30px;
-
-
   bottom: 0;
   width: 100%;
   background: #f8f8f8;
   border: 1px solid #e7e7e7;
   text-align: center
 }
+
+.nav-text {
+  color: #777;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #777;
+}
+
+.nav-link.active {
+  color: #555;
+  background-color: #e7e7e7;
+}
+
+
+
+/*.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open>.nav-link {
+  color: #555;
+  background-color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: #e7e7e7;
+}*/
 </style>
