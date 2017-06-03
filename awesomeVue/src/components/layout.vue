@@ -14,25 +14,29 @@
         <b-collapse is-nav id="nav_collapse">
 
           <b-nav is-nav-bar>
-            <b-link class="nav-link" to="#">
-              <span class="nav-text">[@] ObjC 中国</span>
+            <b-link class="nav-link" to="/issue">
+              <span class="nav-text">期刊</span>
             </b-link>
-            <b-nav-item href="/issues" :active-class="activeClass">期刊</b-nav-item>
-            <b-nav-item href="/products">书籍</b-nav-item>
-            <b-nav-item href="/goods">购物车</b-nav-item>
+            <b-link class="nav-link" to="/products">
+              <span class="nav-text">书籍</span>
+            </b-link>
+            <b-link class="nav-link" to="/goods">
+              <span class="nav-text">购物车</span>
+            </b-link>
           </b-nav>
           <b-nav is-nav-bar class="ml-auto">
 
-            <b-nav-item-dropdown right-alignment>
-
-              <!-- Using text slot -->
+            <b-link class="nav-link" to="/login">
+              <span class="nav-text">登录</span>
+            </b-link>
+            <!-- <b-nav-item-dropdown right-alignment>
               <template slot="text">
           <span style="font-weight: bold;">登录</span>
              </template>
 
-              <!-- <b-dropdown-item to="#">Profile</b-dropdown-item>
-            <b-dropdown-item to="#">Signout</b-dropdown-item> -->
-            </b-nav-item-dropdown>
+              <b-dropdown-item to="#">Profile</b-dropdown-item>
+            <b-dropdown-item to="#">Signout</b-dropdown-item>
+            </b-nav-item-dropdown> -->
           </b-nav>
 
         </b-collapse>
@@ -145,11 +149,42 @@ export default {
   color: #777;
 }
 
-.nav-link.active {
+/*@media (min-width: 576px) {
+  .container {
+    margin-right: 0px !important;
+  }
+}*/
+
+@media (max-width: 767px) {
+  .container {
+    position: static;
+    margin-right: 0px ;
+  }
+}
+
+
+.navbar {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  border-color: rgb(231, 231, 231);
+}
+
+.navbar-collapse {
+  border-color: rgb(231, 231, 231);
+}
+
+.active {
   color: #555;
   background-color: #e7e7e7;
 }
 
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.open,
+.navbar-light .navbar-nav .open>.nav-link {
+  color: #555;
+  background-color: #e7e7e7;
+}
 
 
 /*.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open>.nav-link {
