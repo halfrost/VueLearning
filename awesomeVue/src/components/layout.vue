@@ -4,9 +4,6 @@
   <navgation-bar>
   </navgation-bar>
 
-  <book-card>
-  </book-card>
-
   <div class="app-content">
     <keep-alive>
       <router-view></router-view>
