@@ -141,7 +141,7 @@ export default {
   position: relative;
   float: right;
   margin-top: 8px;
-  margin-right: 15px;
+  margin-right: 0px;
   margin-bottom: 8px;
   background-color: transparent;
   background-image: none;
