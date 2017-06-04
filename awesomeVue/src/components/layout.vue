@@ -6,32 +6,7 @@
 
 <book-card>
 </book-card>
-  <nav class="navbar navbar-inverse " role="navigation">
-      <div class="container">
-
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">这是一个神秘的项目</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li ><a href="/issues/">期刊</a></li>
-            <li class="active"><a href="/products/">书籍</a></li>
-          </ul>
-
-           <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">ydz627@gmail.com</a></li>
-              <li><a href="/logout/">注销 <span class="glyphicon glyphicon-log-out"></span></a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  
   <div class="app-content">
     <keep-alive>
       <router-view></router-view>
