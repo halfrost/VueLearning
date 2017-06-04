@@ -1,71 +1,57 @@
 <template>
-  <div id="app">
-
-    <b-navbar toggleable>
-      <div class="container navbar-container">
-
-        <div class="navbar-header navbar-container">
-          <b-link class="navbar-brand">
-            <span class="nav-text">[@] ObjC 中国</span>
-          </b-link>
-          <b-nav-toggle target="nav_collapse"></b-nav-toggle>
-        </div>
-
-        <b-collapse is-nav id="nav_collapse">
-
-          <b-nav is-nav-bar >
-            <b-link class="nav-link" to="/issue">
-              <span class="nav-text">期刊</span>
-            </b-link>
-            <b-link class="nav-link" to="/products">
-              <span class="nav-text">书籍</span>
-            </b-link>
-            <b-link class="nav-link" to="/goods">
-              <span class="nav-text">购物车</span>
-            </b-link>
-          </b-nav>
-          <b-nav is-nav-bar class="ml-auto">
-
-            <b-link class="nav-link" to="/login">
-              <span class="nav-text">登录</span>
-            </b-link>
-            <!-- <b-nav-item-dropdown right-alignment>
-              <template slot="text">
-          <span style="font-weight: bold;">登录</span>
-             </template>
-
-              <b-dropdown-item to="#">Profile</b-dropdown-item>
-            <b-dropdown-item to="#">Signout</b-dropdown-item>
-            </b-nav-item-dropdown> -->
-          </b-nav>
-
-        </b-collapse>
+<div id="app">
+  <b-navbar toggleable>
+    <div class="container navbar-container">
+      <div class="navbar-header navbar-container">
+        <b-link class="navbar-brand">
+          <span class="nav-text">[@] ObjC 中国</span>
+        </b-link>
+        <b-nav-toggle target="nav_collapse"></b-nav-toggle>
       </div>
-    </b-navbar>
-    <!-- </div> -->
-  </div>
 
+      <b-collapse is-nav id="nav_collapse">
+
+        <b-nav is-nav-bar>
+          <b-link class="nav-link" to="/issue">
+            <span class="nav-text">期刊</span>
+          </b-link>
+          <b-link class="nav-link" to="/products">
+            <span class="nav-text">书籍</span>
+          </b-link>
+          <b-link class="nav-link" to="/goods">
+            <span class="nav-text">购物车</span>
+          </b-link>
+        </b-nav>
+        <b-nav is-nav-bar class="ml-auto">
+
+          <b-link class="nav-link" to="/login">
+            <span class="nav-text">登录</span>
+          </b-link>
+        </b-nav>
+      </b-collapse>
+    </div>
+  </b-navbar>
+</div>
 </template>
 
 <script>
 export default {
-  props: [
-  ]
+  props: []
 }
 </script>
 
 <style>
-
 .nav-text {
   color: #777;
 }
 
 .navbar-light .navbar-nav .nav-link {
   color: #777;
-  padding-left: 15px;  /*这里如果设置为0，那么nav缩小之后的下拉栏的文字会顶到头*/
-  padding-right: 15px; /*这里如果设置为0，那么nav缩小之后的下拉栏的文字会顶到头*/
+  padding-left: 15px;
+  /*这里如果设置为0，那么nav缩小之后的下拉栏的文字会顶到头*/
+  padding-right: 15px;
+  /*这里如果设置为0，那么nav缩小之后的下拉栏的文字会顶到头*/
 }
-
 
 
 /*
@@ -79,7 +65,6 @@ export default {
 }
 
 如何去除掉这个样式，可以减少一些bug，这个样式在最后被加载，所以很难被覆盖。
-
 
 */
 
@@ -102,7 +87,6 @@ export default {
   padding-bottom: 0;
 }
 
-
 .navbar-brand {
   /*float: left;*/
   height: 50px;
@@ -122,7 +106,6 @@ export default {
 
 .navbar-collapse {
   border-color: rgb(231, 231, 231);
-
 }
 
 .active {
@@ -131,11 +114,15 @@ export default {
 }
 
 @media (min-width: 768px) {
-.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+  .container-fluid>.navbar-collapse,
+  .container-fluid>.navbar-header,
+  .container>.navbar-collapse,
+  .container>.navbar-header {
     margin-right: 0;
     margin-left: 0;
+  }
 }
-}
+
 .navbar-header {
   margin-right: -15px;
   margin-left: -15px;
@@ -168,12 +155,12 @@ export default {
 }
 
 
-
 /*@media (min-width: 576px) {
   .container {
     margin-right: 0px !important;
   }
 }*/
+
 
 /*.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open>.nav-link {
   color: #555;
@@ -184,5 +171,4 @@ export default {
     color: #555;
     background-color: #e7e7e7;
 }*/
-
 </style>
