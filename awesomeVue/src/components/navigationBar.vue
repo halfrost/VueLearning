@@ -3,7 +3,7 @@
   <b-navbar toggleable>
     <div class="container navbar-container">
       <div class="navbar-header navbar-container">
-        <b-link class="navbar-brand">
+        <b-link class="navbar-brand" to="/">
           <span class="nav-text">[@] ObjC 中国</span>
         </b-link>
         <b-nav-toggle target="nav_collapse"></b-nav-toggle>
@@ -12,13 +12,13 @@
       <b-collapse is-nav id="nav_collapse">
 
         <b-nav is-nav-bar>
-          <b-link class="nav-link" to="/issue">
+          <b-link class="nav-link" to="/issues">
             <span class="nav-text">期刊</span>
           </b-link>
           <b-link class="nav-link" to="/products">
             <span class="nav-text">书籍</span>
           </b-link>
-          <b-link class="nav-link" to="/goods">
+          <b-link class="nav-link" to="/goodscart">
             <span class="nav-text">购物车</span>
           </b-link>
         </b-nav>
