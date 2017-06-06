@@ -3,7 +3,7 @@
   <b-navbar toggleable>
     <div class="container navbar-container">
       <div class="navbar-header navbar-container">
-        <b-link class="navbar-brand" to="/">
+        <b-link class="navbar-brand disable-active" to="/">
           <span class="nav-text">[@] ObjC 中国</span>
         </b-link>
         <b-nav-toggle target="nav_collapse"></b-nav-toggle>
@@ -73,6 +73,11 @@ export default {
     position: static;
     margin-right: 0px;
   }
+  .navbar-header {
+    margin-right: -15px;
+    margin-left: -15px;
+    border-bottom: 1px solid #e7e7e7;
+  }
 }
 
 .navbar-nav {
@@ -113,6 +118,11 @@ export default {
   background-color: #e7e7e7;
 }
 
+.disable-active {
+  color: #555;
+  background-color: #f8f8f8;
+}
+
 @media (min-width: 768px) {
   .container-fluid>.navbar-collapse,
   .container-fluid>.navbar-header,
@@ -126,7 +136,7 @@ export default {
 .navbar-header {
   margin-right: -15px;
   margin-left: -15px;
-  border-bottom: 1px solid #e7e7e7;
+  /*border-bottom: 1px solid #e7e7e7;*/
 }
 
 .navbar-light .navbar-nav .active>.nav-link,
