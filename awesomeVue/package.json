@@ -11,8 +11,11 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
     "bootstrap-vue": "^0.15.0",
     "element-ui": "^1.2.9",
+    "express": "^4.15.3",
     "vue": "^2.2.2",
     "vue-router": "^2.3.0",
     "vuex": "^2.3.1"

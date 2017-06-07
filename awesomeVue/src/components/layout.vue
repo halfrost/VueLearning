@@ -22,12 +22,30 @@
 import navgationBar from './navigationBar'
 import bookCard from './bookCard'
 import footerView from './footerView'
+import axios from 'axios'
 
 export default {
   components: {
     navgationBar,
     bookCard,
     footerView
+  },
+  created: function() {
+    axios.post('api/getNewsList')
+      .then((response) => {
+        console.log(response)
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+
+    // this.$http.get()
+    // .then((res) => {
+    //   console.log(res)
+    //   this.newsList = res.data
+    // }, (err) => {
+    //   console.log(err)
+    // })
   },
   data() {
     return {
