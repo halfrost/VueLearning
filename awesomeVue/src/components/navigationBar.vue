@@ -40,7 +40,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .nav-text {
   color: #777;
 }
@@ -52,7 +52,6 @@ export default {
   padding-right: 15px;
   /*这里如果设置为0，那么nav缩小之后的下拉栏的文字会顶到头*/
 }
-
 
 /*
 有一个很讨厌的样式，
@@ -163,6 +162,7 @@ export default {
   width: 1em;
   height: 1em;
 }
+
 
 
 /*@media (min-width: 576px) {
