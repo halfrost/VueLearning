@@ -1,184 +1,52 @@
 <template>
-<div id="app">
-  <b-navbar toggleable>
-    <div class="container navbar-container">
-      <div class="navbar-header navbar-container">
-        <b-link class="navbar-brand disable-active" to="/">
-          <span class="nav-text">[@] ObjC 中国</span>
-        </b-link>
-        <b-nav-toggle target="nav_collapse"></b-nav-toggle>
-      </div>
+<div id="navigationbar">
+  <nav class="navbar navbar-default">
 
-      <b-collapse is-nav id="nav_collapse">
+          <div class="container">
 
-        <b-nav is-nav-bar>
-          <b-link class="nav-link" to="/issues">
-            <span class="nav-text">期刊</span>
-          </b-link>
-          <b-link class="nav-link" to="/products">
-            <span class="nav-text">书籍</span>
-          </b-link>
-          <b-link class="nav-link" to="/goodscart">
-            <span class="nav-text">购物车</span>
-          </b-link>
-        </b-nav>
-        <b-nav is-nav-bar class="ml-auto">
+            <div class="navbar-header">
+              <!-- <div class="container"> -->
+              <button type="button" class="navbar-toggle collapsed" @click="showNavbar=!showNavbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" role="button">[@] ObjC 中国</a>
+            </div>
+            <collapse class="navbar-collapse text-align" v-model="showNavbar">
+              <ul class="nav navbar-nav">
+                <li ><a href="/issues/">期刊</a></li>
+                <li class="active"><a href="/products/">书籍</a></li>
+                <li ><a href="/issues/">购物车</a></li>
+                <li ><a href="https://github.com/yuche/vue-strap" target="_blank">
+            Star this project on Github
+            <svg height="16px" fill="#777" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+          </a></li>
+              </ul>
 
-          <b-link class="nav-link" to="/login">
-            <span class="nav-text">登录</span>
-          </b-link>
-        </b-nav>
-      </b-collapse>
-    </div>
-  </b-navbar>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="/login/"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+
+              </ul>
+            </collapse>
+          </div>
+          <!-- </div> -->
+        </nav>
 </div>
 </template>
 
 <script>
 export default {
-  props: []
+  props: [],
+  data() {
+    return {
+      showNavbar: false
+    }
+  }
 }
 </script>
 
 <style scoped>
-.nav-text {
-  color: #777;
-}
 
-.navbar-light .navbar-nav .nav-link {
-  color: #777;
-  padding-left: 15px;
-  /*这里如果设置为0，那么nav缩小之后的下拉栏的文字会顶到头*/
-  padding-right: 15px;
-  /*这里如果设置为0，那么nav缩小之后的下拉栏的文字会顶到头*/
-}
-
-/*
-有一个很讨厌的样式，
-
-@media (min-width: 576px) {
-.container {
-    width: 540px;
-    max-width: 100%;
-  }
-}
-
-如何去除掉这个样式，可以减少一些bug，这个样式在最后被加载，所以很难被覆盖。
-
-*/
-
-@media (max-width: 767px) {
-  .container {
-    position: static;
-    margin-right: 0px;
-  }
-  .navbar-header {
-    margin-right: -15px;
-    margin-left: -15px;
-    border-bottom: 1px solid #e7e7e7;
-  }
-}
-
-.navbar-nav {
-  /*margin: 7.5px -15px;*/
-  /*如果打开这个，就能让navbar下拉栏里面的选中阴影铺满一行，但是缩起来的时候会有动画问题，暂时先隐藏*/
-}
-
-.navbar {
-  background-color: #f8f8f8;
-  border-bottom: 1px solid #e7e7e7;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.navbar-brand {
-  /*float: left;*/
-  height: 50px;
-  padding: 15px 15px;
-  margin-left: 0px;
-  margin-right: 0px;
-  font-size: 18px;
-  line-height: 20px;
-  color: #777;
-}
-
-@media (min-width: 767px) {
-  .navbar-brand {
-    margin-left: 15px;
-  }
-}
-
-.navbar-collapse {
-  border-color: rgb(231, 231, 231);
-}
-
-.active {
-  color: #555;
-  background-color: #e7e7e7;
-}
-
-.disable-active {
-  color: #555;
-  background-color: #f8f8f8;
-}
-
-@media (min-width: 768px) {
-  .container-fluid>.navbar-collapse,
-  .container-fluid>.navbar-header,
-  .container>.navbar-collapse,
-  .container>.navbar-header {
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-
-.navbar-header {
-  margin-right: -15px;
-  margin-left: -15px;
-  /*border-bottom: 1px solid #e7e7e7;*/
-}
-
-.navbar-light .navbar-nav .active>.nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.open,
-.navbar-light .navbar-nav .open>.nav-link {
-  color: #555;
-  background-color: #e7e7e7;
-}
-
-.navbar-toggler {
-  position: relative;
-  float: right;
-  margin-top: 8px;
-  margin-right: 0px;
-  margin-bottom: 8px;
-  background-color: transparent;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
-
-.navbar-toggler-icon {
-  width: 1em;
-  height: 1em;
-}
-
-
-
-/*@media (min-width: 576px) {
-  .container {
-    margin-right: 0px !important;
-  }
-}*/
-
-
-/*.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open>.nav-link {
-  color: #555;
-  background-color: #e7e7e7;
-}
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #555;
-    background-color: #e7e7e7;
-}*/
 </style>
