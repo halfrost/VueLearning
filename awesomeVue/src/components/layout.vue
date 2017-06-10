@@ -1,5 +1,5 @@
 <template>
-<div>
+<div id="__wrapper">
 
   <navgation-bar>
   </navgation-bar>

@@ -4,7 +4,7 @@ import HomePage from '@/pages/homePage'
 import Issues from '@/pages/issues'
 import Products from '@/pages/products'
 import GoodsCart from '@/pages/goodsCart'
-
+import Login from '@/pages/login'
 Vue.use(Router)
 
 export default new Router({
@@ -28,6 +28,11 @@ export default new Router({
     path: '/goodscart',
     name: 'GoodsCart',
     component: GoodsCart
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login
   }
 
   ]
