@@ -1,4 +1,4 @@
-  <template>
+<template>
 <div class="book-content">
 
   <div id="__wrapper">
@@ -9,7 +9,6 @@
           <book-card v-for="item in bookInfo" :key="item.id" :book-cover-image=item.bookCoverImage :book-price="item.bookPrice"></book-card>
       </div>
     </main>
-
   </div>
 </div>
 </template>
