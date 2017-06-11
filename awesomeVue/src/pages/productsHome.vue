@@ -20,22 +20,22 @@ export default {
   data () {
     return {
       bookInfo: [{
-        bookCoverImage: 'https://objccn.io/images/products/swifter-tips/cover.png',
+        bookCoverImage: require('../assets/swifter-tips-cover.png'),
         bookPrice: '49.00',
         bookDetailInfo: '/products/swifter-tips'
       },
       {
-        bookCoverImage: 'https://objccn.io//images/products/functional-swift/cover.png',
+        bookCoverImage: require('../assets/functional-swift-cover.png'),
         bookPrice: '69.00',
         bookDetailInfo: '/products/functional-swift'
       },
       {
-        bookCoverImage: 'https://objccn.io//images/products/core-data/cover.png',
+        bookCoverImage: require('../assets/core-data-cover.png'),
         bookPrice: '69.00',
         bookDetailInfo: '/products/core-data'
       },
       {
-        bookCoverImage: 'https://objccn.io//images/products/advanced-swift/cover.png',
+        bookCoverImage: require('../assets/advanced-swift-cover.png'),
         bookPrice: '69.00',
         bookDetailInfo: '/products/advanced-swift'
       }]
