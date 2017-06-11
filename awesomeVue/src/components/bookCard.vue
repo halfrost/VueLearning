@@ -15,11 +15,11 @@
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu products-dropdown-menu">
-                    <li><a href="/loot/swifter-tips/?download_type=pdf">PDF 格式</a></li>
-                    <li><a href="/loot/swifter-tips/?download_type=mobi">mobi 格式</a></li>
-                    <li><a href="/loot/swifter-tips/?download_type=epub">epub 格式</a></li>
+                    <li><a href="">PDF 格式</a></li>
+                    <li><a href="">mobi 格式</a></li>
+                    <li><a href="">epub 格式</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="/loot/swifter-tips/">打包下载</a></li>
+                    <li><a href="">打包下载</a></li>
                 </ul>
                 <router-link :to="{ path: bookDetailInfo }" class="btn btn-default" type="button">详细</router-link>
               </span>
