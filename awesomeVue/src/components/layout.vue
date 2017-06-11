@@ -30,7 +30,7 @@ export default {
     bookCard,
     footerView
   },
-  created: function() {
+  created() {
     axios.post('api/getNewsList')
       .then((response) => {
         console.log(response)

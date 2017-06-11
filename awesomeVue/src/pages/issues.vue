@@ -6,9 +6,7 @@
       <p class="dim text-center page-header">为中国 Apple 开发社区带来最佳实践和先进技术</p>
 
       <div class="row">
-        <issues-list v-for="issuesItem in issuesListInfo" :key="issuesItem.id" :issue_content_title=issuesItem.issue_content_title
-        :issue_header_meta=issuesItem.issue_header_meta
-        :issue_content_list=issuesItem.issue_content_list></issues-list>
+        <issues-list v-for="issuesItem in issuesListInfo" :key="issuesItem.id" :issue_content_title=issuesItem.issue_content_title :issue_header_meta=issuesItem.issue_header_meta :issue_content_list=issuesItem.issue_content_list></issues-list>
       </div>
     </main>
 
@@ -111,27 +109,635 @@ export default {
         ]
       },
       {
-        issue_content_title: '更轻量的 View Controllers',
-        issue_header_meta: '#1 - 2013 年 7 月',
+        issue_content_title: 'Core Data',
+        issue_header_meta: '#4 - 2013 年 9 月',
         issue_content_list: [{
-          issue_content_item: 'issue-1-0',
-          issue_item_title: '介绍'
+          issue_content_item: 'issue-4-0',
+          issue_item_title: '卷首语'
         },
         {
-          issue_content_item: 'issue-1-1',
-          issue_item_title: '更轻量的 View Controllers'
+          issue_content_item: 'issue-4-1',
+          issue_item_title: 'Core Data 概述'
         },
         {
-          issue_content_item: 'issue-1-2',
-          issue_item_title: '整洁的 Table View 代码'
+          issue_content_item: 'issue-4-2',
+          issue_item_title: '一个完整的 Core Data 应用'
         },
         {
-          issue_content_item: 'issue-1-3',
-          issue_item_title: '测试 View Controllers'
+          issue_content_item: 'issue-4-3',
+          issue_item_title: '用 SQLite 和 FMDB 替代 Core Data'
         },
         {
-          issue_content_item: 'issue-1-4',
-          issue_item_title: 'View Controller 容器'
+          issue_content_item: 'issue-4-4',
+          issue_item_title: '数据模型和模型对象'
+        },
+        {
+          issue_content_item: 'issue-4-5',
+          issue_item_title: '导入大数据集'
+        },
+        {
+          issue_content_item: 'issue-4-6',
+          issue_item_title: 'Fetch 请求'
+        },
+        {
+          issue_content_item: 'issue-4-7',
+          issue_item_title: '自定义 Core Data 迁移'
+        }
+        ]
+      },
+      {
+        issue_content_title: 'iOS 7',
+        issue_header_meta: '#5 - 2013 年 10 月',
+        issue_content_list: [{
+          issue_content_item: 'issue-5-0',
+          issue_item_title: '卷首语'
+        },
+        {
+          issue_content_item: 'issue-5-1',
+          issue_item_title: '初识 TextKit'
+        },
+        {
+          issue_content_item: 'issue-5-2',
+          issue_item_title: 'UICollectionView + UIKit 力学'
+        },
+        {
+          issue_content_item: 'issue-5-3',
+          issue_item_title: 'iew Controller 转场'
+        },
+        {
+          issue_content_item: 'issue-5-4',
+          issue_item_title: '从 NSURLConnection 到 NSURLSession'
+        },
+        {
+          issue_content_item: 'issue-5-5',
+          issue_item_title: 'iOS 7 的多任务'
+        },
+        {
+          issue_content_item: 'issue-5-6',
+          issue_item_title: 'iOS 7 : 隐藏技巧和变通之道'
+        },
+        {
+          issue_content_item: 'issue-5-7',
+          issue_item_title: '为 iOS 7 重新设计 App'
+        }
+        ]
+      },
+      {
+        issue_content_title: 'Build 工具',
+        issue_header_meta: '#6 - 2013 年 11 月',
+        issue_content_list: [{
+          issue_content_item: 'issue-6-0',
+          issue_item_title: '卷首语'
+        },
+        {
+          issue_content_item: 'issue-6-1',
+          issue_item_title: 'Build 过程'
+        },
+        {
+          issue_content_item: 'issue-6-2',
+          issue_item_title: '编译器'
+        },
+        {
+          issue_content_item: 'issue-6-3',
+          issue_item_title: 'Mach-O 可执行文件'
+        },
+        {
+          issue_content_item: 'issue-6-4',
+          issue_item_title: '深入理解 CocoaPods'
+        },
+        {
+          issue_content_item: 'issue-6-5',
+          issue_item_title: '为 iOS 建立 Travis CI'
+        }
+        ]
+      },
+      {
+        issue_content_title: 'Foundation',
+        issue_header_meta: '#7 - 2013 年 12 月',
+        issue_content_list: [{
+          issue_content_item: 'issue-7-0',
+          issue_item_title: '卷首语'
+        },
+        {
+          issue_content_item: 'issue-7-1',
+          issue_item_title: '基础集合类'
+        },
+        {
+          issue_content_item: 'issue-7-2',
+          issue_item_title: '值对象'
+        },
+        {
+          issue_content_item: 'issue-7-3',
+          issue_item_title: 'KVC 和 KVO'
+        },
+        {
+          issue_content_item: 'issue-7-4',
+          issue_item_title: '消息传递机制'
+        },
+        {
+          issue_content_item: 'issue-7-5',
+          issue_item_title: '自定义 Formatters'
+        },
+        {
+          issue_content_item: 'issue-7-6',
+          issue_item_title: '语言标签'
+        }
+        ]
+      },
+      {
+        issue_content_title: '四轴无人机项目',
+        issue_header_meta: '#8 - 2014 年 1 月',
+        issue_content_list: [{
+          issue_content_item: 'issue-8-0',
+          issue_item_title: '卷首语'
+        },
+        {
+          issue_content_item: 'issue-8-1',
+          issue_item_title: '项目介绍'
+        },
+        {
+          issue_content_item: 'issue-8-2',
+          issue_item_title: '与四轴无人机的通讯'
+        },
+        {
+          issue_content_item: 'issue-8-3',
+          issue_item_title: '导航应用'
+        },
+        {
+          issue_content_item: 'issue-8-4',
+          issue_item_title: '客户端'
+        }
+        ]
+      },
+      {
+        issue_content_title: '字符串',
+        issue_header_meta: '#9 - 2014 年 2 月',
+        issue_content_list: [{
+          issue_content_item: 'issue-9-0',
+          issue_item_title: '卷首语'
+        },
+        {
+          issue_content_item: 'issue-9-1',
+          issue_item_title: 'NSString 与 Unicode'
+        },
+        {
+          issue_content_item: 'issue-9-2',
+          issue_item_title: '玩转字符串'
+        },
+        {
+          issue_content_item: 'issue-9-3',
+          issue_item_title: '字符串本地化'
+        },
+        {
+          issue_content_item: 'issue-9-4',
+          issue_item_title: '字符串解析'
+        },
+        {
+          issue_content_item: 'issue-9-5',
+          issue_item_title: '字符串渲染'
+        }
+        ]
+      },
+      {
+        issue_content_title: '同步数据',
+        issue_header_meta: '#10 - 2014 年 3 月',
+        issue_content_list: [{
+          issue_content_item: 'issue-10-0',
+          issue_item_title: '卷首语'
+        },
+        {
+          issue_content_item: 'issue-10-1',
+          issue_item_title: '数据同步'
+        },
+        {
+          issue_content_item: 'issue-10-2',
+          issue_item_title: 'iCloud 和 Core Data'
+        },
+        {
+          issue_content_item: 'issue-10-3',
+          issue_item_title: '精通 iCloud 文档存储'
+        },
+        {
+          issue_content_item: 'issue-10-4',
+          issue_item_title: '同步案例学习'
+        },
+        {
+          issue_content_item: 'issue-10-5',
+          issue_item_title: 'Core Data 网络应用实例'
+        },
+        {
+          issue_content_item: 'issue-10-6',
+          issue_item_title: 'IP，TCP 和 HTTP'
+        }
+        ]
+      },
+      {
+        issue_content_title: 'Android',
+        issue_header_meta: '#11 - 2014 年 4 月',
+        issue_content_list: [{
+          issue_content_item: 'issue-11-0',
+          issue_item_title: '卷首语'
+        },
+        {
+          issue_content_item: 'issue-11-1',
+          issue_item_title: 'iOS 开发者的 Android 第一课'
+        },
+        {
+          issue_content_item: 'issue-11-2',
+          issue_item_title: 'Android Intents'
+        },
+        {
+          issue_content_item: 'issue-11-3',
+          issue_item_title: '响应式 Android 应用'
+        },
+        {
+          issue_content_item: 'issue-11-4',
+          issue_item_title: 'Android 通知中心'
+        },
+        {
+          issue_content_item: 'issue-11-5',
+          issue_item_title: 'Android 中的 SQLite 数据库支持'
+        },
+        {
+          issue_content_item: 'issue-11-6',
+          issue_item_title: '依赖注入和注解，为什么 Java 比你想象的要好'
+        }
+        ]
+      },
+      {
+        issue_content_title: '动画',
+        issue_header_meta: '#12 - 2014 年 5 月',
+        issue_content_list: [{
+          issue_content_item: 'issue-12-0',
+          issue_item_title: '卷首语'
+        },
+        {
+          issue_content_item: 'issue-12-1',
+          issue_item_title: '动画解释'
+        },
+        {
+          issue_content_item: 'issue-12-2',
+          issue_item_title: 'Layer 中自定义属性的动画'
+        },
+        {
+          issue_content_item: 'issue-12-3',
+          issue_item_title: '自定义 ViewController 容器转场'
+        },
+        {
+          issue_content_item: 'issue-12-4',
+          issue_item_title: 'View-Layer 协作'
+        },
+        {
+          issue_content_item: 'issue-12-5',
+          issue_item_title: 'Collection View 动画'
+        },
+        {
+          issue_content_item: 'issue-12-6',
+          issue_item_title: '交互式动画'
+        }
+        ]
+      },
+      {
+        issue_content_title: '架构',
+        issue_header_meta: '#13 - 2014 年 6 月',
+        issue_content_list: [{
+          issue_content_item: 'issue-13-0',
+          issue_item_title: '卷首语'
+        },
+        {
+          issue_content_item: 'issue-13-1',
+          issue_item_title: 'MVVM 介绍'
+        },
+        {
+          issue_content_item: 'issue-13-2',
+          issue_item_title: '避免滥用单例'
+        },
+        {
+          issue_content_item: 'issue-13-3',
+          issue_item_title: 'iOS 中的行为'
+        },
+        {
+          issue_content_item: 'issue-13-4',
+          issue_item_title: '子类'
+        },
+        {
+          issue_content_item: 'issue-13-5',
+          issue_item_title: '使用 VIPER 构建 iOS 应用'
+        }
+        ]
+      },
+      {
+        issue_content_title: '回到 Mac',
+        issue_header_meta: '#14 - 2014 年 7 月',
+        issue_content_list: [{
+          issue_content_item: 'issue-14-0',
+          issue_item_title: '卷首语'
+        },
+        {
+          issue_content_item: 'issue-14-1',
+          issue_item_title: '使 Mac 应用数据脚本化'
+        },
+        {
+          issue_content_item: 'issue-14-2',
+          issue_item_title: '在沙盒中编写脚本'
+        },
+        {
+          issue_content_item: 'issue-14-3',
+          issue_item_title: '插件'
+        },
+        {
+          issue_content_item: 'issue-14-4',
+          issue_item_title: 'XPC'
+        },
+        {
+          issue_content_item: 'issue-14-5',
+          issue_item_title: '从 UIKit 到 AppKit'
+        }
+        ]
+      },
+      {
+        issue_content_title: '测试',
+        issue_header_meta: '#15 - 2014 年 8 月',
+        issue_content_list: [{
+          issue_content_item: 'issue-15-0',
+          issue_item_title: '卷首语'
+        },
+        {
+          issue_content_item: 'issue-15-1',
+          issue_item_title: '行为驱动开发'
+        },
+        {
+          issue_content_item: 'issue-15-2',
+          issue_item_title: 'XCTest 测试实战'
+        },
+        {
+          issue_content_item: 'issue-15-3',
+          issue_item_title: '依赖注入'
+        },
+        {
+          issue_content_item: 'issue-15-4',
+          issue_item_title: '糟糕的测试'
+        },
+        {
+          issue_content_item: 'issue-15-5',
+          issue_item_title: '置换测试: Mock, Stub 和其他'
+        },
+        {
+          issue_content_item: 'issue-15-6',
+          issue_item_title: 'UI 测试'
+        },
+        {
+          issue_content_item: 'issue-15-7',
+          issue_item_title: '截图测试'
+        }
+        ]
+      },
+      {
+        issue_content_title: 'Swift',
+        issue_header_meta: '#16 - 2014 年 9 月',
+        issue_content_list: [{
+          issue_content_item: 'issue-16-0',
+          issue_item_title: '卷首语'
+        },
+        {
+          issue_content_item: 'issue-16-1',
+          issue_item_title: 'Swift 的强大之处'
+        },
+        {
+          issue_content_item: 'issue-16-2',
+          issue_item_title: '结构体和值类型'
+        },
+        {
+          issue_content_item: 'issue-16-3',
+          issue_item_title: 'Swift 方法的多面性'
+        },
+        {
+          issue_content_item: 'issue-16-4',
+          issue_item_title: 'Swift 的函数式 API'
+        },
+        {
+          issue_content_item: 'issue-16-5',
+          issue_item_title: 'Playground 快速原型制作'
+        }
+        ]
+      },
+      {
+        issue_content_title: '安全',
+        issue_header_meta: '#17 - 2014 年 10 月',
+        issue_content_list: [{
+          issue_content_item: 'issue-17-0',
+          issue_item_title: '卷首语'
+        },
+        {
+          issue_content_item: 'issue-17-1',
+          issue_item_title: '为什么今天安全仍然重要'
+        },
+        {
+          issue_content_item: 'issue-17-2',
+          issue_item_title: '代码签名探析'
+        },
+        {
+          issue_content_item: 'issue-17-3',
+          issue_item_title: '收据验证'
+        }
+        ]
+      },
+      {
+        issue_content_title: '游戏',
+        issue_header_meta: '#18 - 2014 年 11 月',
+        issue_content_list: [{
+          issue_content_item: 'issue-18-0',
+          issue_item_title: '卷首语'
+        },
+        {
+          issue_content_item: 'issue-18-1',
+          issue_item_title: '设计优雅的移动游戏'
+        },
+        {
+          issue_content_item: 'issue-18-2',
+          issue_item_title: 'Metal'
+        },
+        {
+          issue_content_item: 'issue-18-3',
+          issue_item_title: 'Scene Kit'
+        },
+        {
+          issue_content_item: 'issue-18-4',
+          issue_item_title: '游戏中的多点互联'
+        },
+        {
+          issue_content_item: 'issue-18-5',
+          issue_item_title: '虚拟音域 - 声音设计的艺术'
+        }
+        ]
+      },
+      {
+        issue_content_title: '调试',
+        issue_header_meta: '#19 - 2014 年 12 月',
+        issue_content_list: [{
+          issue_content_item: 'issue-19-0',
+          issue_item_title: '卷首语'
+        },
+        {
+          issue_content_item: 'issue-19-1',
+          issue_item_title: '调试：案例学习'
+        },
+        {
+          issue_content_item: 'issue-19-2',
+          issue_item_title: '与调试器共舞 - LLDB 的华尔兹'
+        },
+        {
+          issue_content_item: 'issue-19-3',
+          issue_item_title: '调试核对清单'
+        },
+        {
+          issue_content_item: 'issue-19-4',
+          issue_item_title: 'DTrace'
+        },
+        {
+          issue_content_item: 'issue-19-5',
+          issue_item_title: '活动追踪'
+        }
+        ]
+      },
+      {
+        issue_content_title: '访谈',
+        issue_header_meta: '#20 - 2015 年 1 月',
+        issue_content_list: [{
+          issue_content_item: 'issue-20-0',
+          issue_item_title: '卷首语'
+        },
+        {
+          issue_content_item: 'issue-20-1',
+          issue_item_title: '终身学习的一代人'
+        },
+        {
+          issue_content_item: 'issue-2O-2',
+          issue_item_title: '让东西变得不那么糟'
+        },
+        {
+          issue_content_item: 'issue-20-3',
+          issue_item_title: '学无止境'
+        }
+        ]
+      },
+      {
+        issue_content_title: '相机与照片',
+        issue_header_meta: '#21 - 2015 年 2 月',
+        issue_content_list: [{
+          issue_content_item: 'issue-21-0',
+          issue_item_title: '卷首语'
+        },
+        {
+          issue_content_item: 'issue-21-1',
+          issue_item_title: '相机工作原理'
+        },
+        {
+          issue_content_item: 'issue-21-2',
+          issue_item_title: '图片格式'
+        },
+        {
+          issue_content_item: 'issue-21-3',
+          issue_item_title: 'iOS 上的相机捕捉'
+        },
+        {
+          issue_content_item: 'issue-21-4',
+          issue_item_title: '照片框架'
+        },
+        {
+          issue_content_item: 'issue-21-5',
+          issue_item_title: '照片扩展'
+        },
+        {
+          issue_content_item: 'issue-21-6',
+          issue_item_title: 'Core Image 介绍'
+        },
+        {
+          issue_content_item: 'issue-21-7',
+          issue_item_title: 'GPU 加速下的图像处理'
+        },
+        {
+          issue_content_item: 'issue-21-8',
+          issue_item_title: 'GPU 加速下的图像视觉'
+        },
+        {
+          issue_content_item: 'issue-21-9',
+          issue_item_title: '基于 OpenCV 的人脸识别'
+        }
+        ]
+      },
+      {
+        issue_content_title: 'iOS 项目管理',
+        issue_header_meta: '#22 - 2015 年 3 月',
+        issue_content_list: [{
+          issue_content_item: 'issue-22-0',
+          issue_item_title: '卷首语'
+        },
+        {
+          issue_content_item: 'issue-22-1',
+          issue_item_title: 'Omni 内部'
+        },
+        {
+          issue_content_item: 'issue-22-2',
+          issue_item_title: 'Artsy'
+        },
+        {
+          issue_content_item: 'issue-22-3',
+          issue_item_title: 'Square Register 的扩张'
+        },
+        {
+          issue_content_item: 'issue-22-4',
+          issue_item_title: '代码审查的艺术：Dropbox 的故事'
+        },
+        {
+          issue_content_item: 'issue-22-5',
+          issue_item_title: '响应式视图'
+        }
+        ]
+      },
+      {
+        issue_content_title: '视频',
+        issue_header_meta: '#23 - 2015 年 4 月',
+        issue_content_list: [{
+          issue_content_item: 'issue-23-0',
+          issue_item_title: '卷首语'
+        },
+        {
+          issue_content_item: 'issue-23-1',
+          issue_item_title: '在 iOS 上捕获视频'
+        },
+        {
+          issue_content_item: 'issue-23-2',
+          issue_item_title: 'Core Image 和视频'
+        },
+        {
+          issue_content_item: 'issue-23-3',
+          issue_item_title: '视频工具箱和硬件加速'
+        }
+        ]
+      },
+      {
+        issue_content_title: '音频',
+        issue_header_meta: '#24 - 2015 年 5 月',
+        issue_content_list: [{
+          issue_content_item: 'issue-24-0',
+          issue_item_title: '卷首语'
+        },
+        {
+          issue_content_item: 'issue-24-1',
+          issue_item_title: '音频处理的狗屋'
+        },
+        {
+          issue_content_item: 'issue-24-2',
+          issue_item_title: '使用 Swift 进行函数式信号处理'
+        },
+        {
+          issue_content_item: 'issue-24-3',
+          issue_item_title: '播放，失败，迭代：面向产品的音效设计'
+        },
+        {
+          issue_content_item: 'issue-24-4',
+          issue_item_title: '音频 API 一览'
         }
         ]
       }

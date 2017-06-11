@@ -3,8 +3,10 @@ import Router from 'vue-router'
 import HomePage from '@/pages/homePage'
 import Issues from '@/pages/issues'
 import Products from '@/pages/products'
+import ProductsHome from '@/pages/productsHome'
 import GoodsCart from '@/pages/goodsCart'
 import Login from '@/pages/login'
+import ProductsDetailInfo from '@/pages/productsDetailInfo'
 Vue.use(Router)
 
 export default new Router({
@@ -22,7 +24,29 @@ export default new Router({
   {
     path: '/products',
     name: 'Products',
-    component: Products
+    component: Products,
+    // redirect: '/products',
+    children: [{
+      path: '/',
+      component: ProductsHome
+    },
+    {
+      path: 'swifter-tips',
+      component: ProductsDetailInfo
+    },
+    {
+      path: 'functional-swift',
+      component: ProductsDetailInfo
+    },
+    {
+      path: 'core-data',
+      component: ProductsDetailInfo
+    },
+    {
+      path: 'advanced-swift',
+      component: ProductsDetailInfo
+    }
+    ]
   },
   {
     path: '/goodscart',
