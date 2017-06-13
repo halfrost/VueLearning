@@ -20,7 +20,7 @@ import axios from 'axios'
 
 export default {
   created() {
-    axios.post('api/getIssuesListInfo')
+    axios.post('/api/getIssuesListInfo')
       .then((response) => {
         this.issuesListInfo = response.data
       })
