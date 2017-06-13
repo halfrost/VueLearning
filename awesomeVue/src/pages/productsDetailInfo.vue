@@ -55,13 +55,17 @@ export default {
         console.log('出错啦~', error)
       })
   },
-  // computed: {
-  //   selectDetailInfo() {
-  //     console.log(this.$route.path)
-  //     console.log('^^^^^^^^^^^^^', this.productsDetailInfoList[this.$route.path])
-  //     return this.productsDetailInfoList[this.$route.path]
-  //   }
-  // },
+  computed: {
+    selectDetailInfo() {
+      console.log(this.$route.path)
+      console.log('^^^^^^^^^^^^^', this.productsDetailInfoList[this.$route.path])
+      if (this.productsDetailInfoList[this.$route.path] === undefined) {
+        return this.defaultDetailInfo
+      } else {
+        return this.productsDetailInfoList[this.$route.path]
+      }
+    }
+  },
   components: {
     ProductsHeader,
     ProductsDownloadTool,
@@ -73,7 +77,7 @@ export default {
   data() {
     return {
       productsDetailInfoList: {},
-      selectDetailInfo: {
+      defaultDetailInfo: {
         productTitle: '',
         productPrice: '',
         authorList: [],
