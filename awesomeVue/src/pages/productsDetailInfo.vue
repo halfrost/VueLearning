@@ -17,7 +17,7 @@
 
       <hr>
 
-      <products-author>
+      <products-author :author-list=selectDetailInfo.authorList :translator-list=selectDetailInfo.translatorList>
       </products-author>
 
       <hr>
@@ -66,7 +66,9 @@ export default {
           productPrice: '¥49.00',
           authorList: [{
             authorLink: 'http://onev.cat',
-            authorName: '王巍'
+            authorName: '王巍',
+            authorAvatar: require('../assets/weiwang.jpg'),
+            authorDescribe: '<p>ObjC 中国的创始人之一，objc.io 书籍翻译工作组织者。使用 onevcat 作为 ID 活跃在中国 iOS 开发界，Swift 使用者。</p> '
           }],
           translatorList: [
           ],
@@ -166,28 +168,41 @@ export default {
           productPrice: '¥69.00',
           authorList: [{
             authorLink: 'https://twitter.com/chriseidhof',
-            authorName: 'Chris Eidhof'
+            authorName: 'Chris Eidhof',
+            authorAvatar: require('../assets/chriseidhof.jpg'),
+            authorDescribe: '<p>Chris 是 objc.io 的创始人之一。他之前是一名 Haskell 程序员，最近几年 Chris 专注于 Apple 平台并进行了深入研究。</p>'
           },
           {
             authorLink: 'https://twitter.com/floriankugler',
-            authorName: 'Florian Kugler'
+            authorName: 'Florian Kugler',
+            authorAvatar: require('../assets/floriankugler.jpg'),
+            authorDescribe: '<p>Florian 是 objc.io 的创始人之一。他已经对 OOP 编程范式如数家珍，现在他正在研究单子和函子的终极奥义。</p> '
           },
           {
             authorLink: 'https://twitter.com/wouterswierstra',
-            authorName: 'Wouter Swierstra'
+            authorName: 'Wouter Swierstra',
+            authorAvatar: require('../assets/wouterswierstra.jpg'),
+            authorDescribe: '<p>Wouter 在函数式编程领域有 15 以上年的经验。他在工业界，教育界和出版界均有关于函数式编程的建树。</p> '
           }
           ],
           translatorList: [{
             authorLink: 'http://ckitakishi.com/',
-            authorName: '陈聿菡'
+            authorName: '陈聿菡',
+            authorAvatar: require('../assets/chenyuhan.jpg'),
+            authorDescribe: '<p>陈聿菡目前在日本从事 iOS 开发，在此之前是一名前端开发者，对图像处理感兴趣，正在为写出优美的代码而修炼。</p> '
           },
           {
             authorLink: 'http://bifidy.net',
-            authorName: '杜欣'
+            authorName: '杜欣',
+            authorAvatar: require('../assets/duxin.jpg'),
+            authorDescribe: '<p>杜欣是一名热衷于分享的 iOS 开发者，此前曾多次参与 ObjC 中国社区的翻译工作。会在闲暇时撰写博客分享一些学习心得，是个聊起开发偶尔会停不下来的家伙。</p> '
+
           },
           {
             authorLink: 'https://weibo.com/onevcat',
-            authorName: '王巍'
+            authorName: '王巍',
+            authorAvatar: require('../assets/weiwang.jpg'),
+            authorDescribe: '<p>ObjC 中国的创始人之一，objc.io 书籍翻译工作组织者。使用 onevcat 作为 ID 活跃在中国 iOS 开发界，Swift 使用者。</p> '
           }
           ],
           productSubtitle: '学习 Swift 函数式编程的核心观点，并将其运用到真实世界的开发中去。',
@@ -290,24 +305,34 @@ export default {
           productPrice: '¥69.00',
           authorList: [{
             authorLink: 'https://twitter.com/floriankugler',
-            authorName: 'Florian Kugler'
+            authorName: 'Florian Kugler',
+            authorAvatar: require('../assets/floriankugler.jpg'),
+            authorDescribe: '<p>Florian 是 objc.io 的创始人之一。他现在负责维护像是 <a href="http://decksetapp.com/">Deckset</a> 和 <a href="http://getscenery.com/">Scenery</a> 这样的 Mac 应用。同时 Florian 也是<a href="/products/functional-swift/">《函数式 Swift》</a>的作者之一。</p>'
           },
           {
             authorLink: 'https://twitter.com/danielboedewadt',
-            authorName: 'Daniel Eggert'
+            authorName: 'Daniel Eggert',
+            authorAvatar: require('../assets/danieleggert.jpg'),
+            authorDescribe: '<p>Daniel 是 objc.io 的创始人之一。他已经和 Core Data 打交道 10 年之久了，特别是在照片和图像处理方面经验非常丰富。Daniel 在 Apple 工作了五年，并帮助 Apple 将照片应用和相机应用迁移到基于 Core Data 的架构上来。</p> '
           }
           ],
           translatorList: [{
             authorLink: 'http://weibo.com/hewigovens',
-            authorName: '徐涛'
+            authorName: '徐涛',
+            authorAvatar: require('../assets/xutao.jpg'),
+            authorDescribe: '<p>Geek /iOS & Mac Dev, Swift 使用者，平时喜欢开发一些小工具，开源软件爱好与贡献者。</p> '
           },
           {
             authorLink: 'https://www.linkedin.com/in/shijia-qian',
-            authorName: '钱世家'
+            authorName: '钱世家',
+            authorAvatar: require('../assets/qianshijia.jpg'),
+            authorDescribe: '<p>目前在澳大利亚做 iOS 开发，喜欢用 Swift 和 Python 来解决问题。PS4 狂热爱好者，闲暇时间基本都花在打游戏上了。</p> '
           },
           {
             authorLink: 'https://weibo.com/onevcat',
-            authorName: '王巍'
+            authorName: '王巍',
+            authorAvatar: require('../assets/weiwang.jpg'),
+            authorDescribe: '<p>ObjC 中国的创始人之一，objc.io 书籍翻译工作组织者。使用 onevcat 作为 ID 活跃在中国 iOS 开发界，Swift 使用者。</p> '
           }
           ],
           productSubtitle: '使用例子为您详解 Core Data 从简单的持久化到多线程及同步等高级应用的最佳实践。',
@@ -414,20 +439,28 @@ export default {
           productPrice: '¥69.00',
           authorList: [{
             authorLink: 'https://twitter.com/chriseidhof',
-            authorName: 'Chris Eidhof'
+            authorName: 'Chris Eidhof',
+            authorAvatar: require('../assets/chriseidhof.jpg'),
+            authorDescribe: '<p>Chris 是 objc.io 的创始人之一。他创建了 <a href="http://decksetapp.com/">Deckset</a> 和 <a href="http://www.getscenery.com/">Scenery</a> 等应用。同时，他也是<a href="/products/functional-swift/">《函数式 Swift》</a>一书的作者。 </p> '
           },
           {
             authorLink: 'https://twitter.com/olebegemann',
-            authorName: 'Ole Begemann'
+            authorName: 'Ole Begemann',
+            authorAvatar: require('../assets/olebegemann.jpg'),
+            authorDescribe: '<p>Ole 是一个自由职业开发者，同时他也是作家和科技网站编辑。Ole 在 Swift 发布伊始就在自己的<a href="https://oleb.net/">博客</a>上发表了很多看法，他在 Unicode 和字符串处理方面是权威专家。</p> '
           },
           {
             authorLink: 'http://airspeedvelocity.net/',
-            authorName: 'Airspeed Velocity'
+            authorName: 'Airspeed Velocity',
+            authorAvatar: require('../assets/airspeedvelocity.jpg'),
+            authorDescribe: '<p><a href="http://airspeedvelocity.net/">Airspeed Velocity 的博客</a>从 Swift 早期的第一个 beta 版本开始就在关注和研究 Swift 的发展进程。该博客主要着眼于 Swift 标准库的实现以及 Swift 中的特性于标准库之间的配合。博主想要与这个世界分享知识，但是又略为娇羞，因此他选择了匿名参与本书的写作。</p> '
           }
           ],
           translatorList: [{
             authorLink: 'https://weibo.com/onevcat',
-            authorName: '王巍'
+            authorName: '王巍',
+            authorAvatar: require('../assets/weiwang.jpg'),
+            authorDescribe: '<p>ObjC 中国的创始人之一，objc.io 书籍翻译工作组织者。使用 onevcat 作为 ID 活跃在中国 iOS 开发界，Swift 使用者。</p> '
           }
           ],
           productSubtitle: '讨论 Swift 特性中从低层级编程到高阶抽象的各个方面的进阶知识',
