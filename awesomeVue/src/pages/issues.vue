@@ -25,7 +25,7 @@ export default {
         this.issuesListInfo = response.data
       })
       .catch((error) => {
-        console.log(error)
+        console.log('issues 页面出错了', error)
       })
   },
   components: {
