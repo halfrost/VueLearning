@@ -45,25 +45,4 @@
 </script>
 
 <style scoped>
-@media (min-width: 768px) {
-  .col-sm-6 {
-    width: 50%;
-  }
-}
-
-@media (min-width: 576px) {
- .col-sm-6 {
-             flex: none;
-        }
-}
-
-/*@media (min-width: 576px) {
-
-  .col-sm-6 {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 50%;
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}*/
 </style>
