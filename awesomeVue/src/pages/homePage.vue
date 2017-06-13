@@ -15,7 +15,7 @@
         <div class="boxed-content left-aligned left-boxed-icon">
           <span class="icon glyphicon glyphicon-education"></span>
           <h2 class="boxed-content-title"><a href="/issues/">期刊</a></h2>
-          <p><a href="https://www.objc.io/issues/">objc.io 期刊</a>自 2013 年中以来，在两年时间内发布了 24 期高质量的 Apple 平台开发相关的文章，内容涉及视图、动画、架构、测试等诸多方面，涵盖了优秀 Apple 开发者需要知道的各项进阶内容。</p>
+          <p><router-link to="/issues">objc.io 期刊</router-link>自 2013 年中以来，在两年时间内发布了 24 期高质量的 Apple 平台开发相关的文章，内容涉及视图、动画、架构、测试等诸多方面，涵盖了优秀 Apple 开发者需要知道的各项进阶内容。</p>
           <p>ObjC 中国项目与 objc.io 展开合作，我们的<a href="https://github.com/objccn/articles/graphs/contributors">志愿者</a>将这些期刊翻译成了中文，以飨广大中文读者。</p>
         </div>
         <a class="btn btn-index btn-lg" href="/issues/">查看期刊专题</a></p>

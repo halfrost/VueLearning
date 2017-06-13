@@ -77,7 +77,7 @@ var apiRouter = express.Router()
 var fs = require('fs')
 apiRouter.route('/:apiName')
 .all(function (req, res) {
-  fs.readFile('./db.json', 'utf8', function (err, data) {
+  fs.readFile('./api.json', 'utf8', function (err, data) {
     if (err) throw err
     var data = JSON.parse(data)
     if (data[req.params.apiName]) {
