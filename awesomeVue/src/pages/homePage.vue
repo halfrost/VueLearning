@@ -24,7 +24,7 @@
       <div class="index-content col-sm-6">
         <div class="boxed-content left-aligned left-boxed-icon">
           <span class="icon glyphicon glyphicon-book"></span>
-          <h2 class="boxed-content-title"><a href="/products/">书籍</a></h2>
+          <h2 class="boxed-content-title"><router-link to="/products/">书籍</router-link></h2>
           <p>objc.io 的 Swift <a href="https://www.objc.io/books/">相关书籍</a>质量极高，是自学提高的优秀读物。我们取得了授权，将这些书籍翻译为中文，并以更符合中国开发者的价格进行出售。</p>
           <p>ObjC 中国致力于最优秀的翻译作品，希望这些图书能将先进的 Swift 开发技术以更易懂的方式介绍给中文社区的开发者们。</p>
         </div>
