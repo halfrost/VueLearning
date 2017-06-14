@@ -8,7 +8,7 @@
 
     <ul class="issue_content_list">
       <li class="issue_content_item" v-for="item in issue_content_list">
-        <a :href=item.issue_content_item>{{item.issue_item_title}}</a>
+        <router-link :to="'/issues/'+item.issue_content_item">{{item.issue_item_title}}</router-link>
       </li>
     </ul>
   </div>

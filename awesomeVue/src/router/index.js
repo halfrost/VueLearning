@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HomePage from '@/pages/homePage'
 import Issues from '@/pages/issues'
+import IssuesDetail from '@/pages/issuesDetail'
 import Products from '@/pages/products'
 import ProductsHome from '@/pages/productsHome'
 import GoodsCart from '@/pages/goodsCart'
@@ -20,6 +21,10 @@ export default new Router({
     path: '/issues',
     name: 'Issues',
     component: Issues
+  },
+  {
+    path: '/issues/:issuesNum',
+    component: IssuesDetail
   },
   {
     path: '/products',

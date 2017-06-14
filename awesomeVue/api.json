@@ -4,23 +4,58 @@
     "issue_header_meta": "#1 - 2013 年 7 月",
     "issue_content_list": [{
       "issue_content_item": "issue-1-0",
-      "issue_item_title": "介绍"
+      "issue_item_title": "介绍",
+      "issue_date": "2014/03/18",
+      "authorInfo": {
+        "authorLink": "http://tang3w.com",
+        "authorName": "唐天勇",
+        "authorAvatar": "../static/tangtianyong.jpg",
+        "authorDescribe": "<p>iOS 开发者</p> "
+      }
     },
     {
       "issue_content_item": "issue-1-1",
-      "issue_item_title": "更轻量的 View Controllers"
+      "issue_item_title": "更轻量的 View Controllers",
+      "issue_date": "2014/03/18",
+      "authorInfo": {
+        "authorLink": "http://tang3w.com",
+        "authorName": "唐天勇",
+        "authorAvatar": "../static/tangtianyong.jpg",
+        "authorDescribe": "<p>iOS 开发者</p> "
+      }
     },
     {
       "issue_content_item": "issue-1-2",
-      "issue_item_title": "整洁的 Table View 代码"
+      "issue_item_title": "整洁的 Table View 代码",
+      "issue_date": "2014/03/19",
+      "authorInfo": {
+        "authorLink": "http://tang3w.com",
+        "authorName": "唐天勇",
+        "authorAvatar": "../static/tangtianyong.jpg",
+        "authorDescribe": "<p>iOS 开发者</p> "
+      }
     },
     {
       "issue_content_item": "issue-1-3",
-      "issue_item_title": "测试 View Controllers"
+      "issue_item_title": "测试 View Controllers",
+      "issue_date": "2014/03/18",
+      "authorInfo": {
+        "authorLink": "http://tang3w.com",
+        "authorName": "唐天勇",
+        "authorAvatar": "../static/tangtianyong.jpg",
+        "authorDescribe": "<p>iOS 开发者</p> "
+      }
     },
     {
       "issue_content_item": "issue-1-4",
-      "issue_item_title": "View Controller 容器"
+      "issue_item_title": "View Controller 容器",
+      "issue_date": "2014/03/18",
+      "authorInfo": {
+        "authorLink": "http://tang3w.com",
+        "authorName": "唐天勇",
+        "authorAvatar": "../static/tangtianyong.jpg",
+        "authorDescribe": "<p>iOS 开发者</p> "
+      }
     }
     ]
   },
@@ -29,27 +64,69 @@
     "issue_header_meta": "#2 - 2013 年 8 月",
     "issue_content_list": [{
       "issue_content_item": "issue-2-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": "2014/03/19",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/fangyixiong",
+        "authorName": "方一雄",
+        "authorAvatar": "../static/fangyixiong.jpg",
+        "authorDescribe": "<p>iOS 程序员，iOS init 站长</p> "
+      }
     },
     {
       "issue_content_item": "issue-2-1",
-      "issue_item_title": "并发编程：API 及挑战"
+      "issue_item_title": "并发编程：API 及挑战",
+      "issue_date": "2014/03/21",
+      "authorInfo": {
+        "authorLink": "http://beyondvincent.com",
+        "authorName": "破船",
+        "authorAvatar": "../static/pochuan.jpg",
+        "authorDescribe": "<p>破船是一名 iOS 开发者，目前工作在昆明。他在8小时之外还是一名业余跑者，爱好篮球。</p> "
+      }
     },
     {
       "issue_content_item": "issue-2-2",
-      "issue_item_title": "常见的后台实践"
+      "issue_item_title": "常见的后台实践",
+      "issue_date": "2014/03/22",
+      "authorInfo": {
+        "authorLink": "http://onev.cat",
+        "authorName": "onevcat",
+        "authorAvatar": "../static/onevcat.jpg",
+        "authorDescribe": "<p>王巍 (@onevcat) 是一名 iOS 和 Unity3D 开发者，现旅居日本，寻求创意之源</p> "
+      }
     },
     {
       "issue_content_item": "issue-2-3",
-      "issue_item_title": "底层并发 API"
+      "issue_item_title": "底层并发 API",
+      "issue_date": "2014/03/29",
+      "authorInfo": {
+        "authorLink": "http://blog.nswebfrog.com",
+        "authorName": "webfrogs",
+        "authorAvatar": "../static/webfrogs.jpg",
+        "authorDescribe": "<p>从事 iOS 系统的相关开发。 热爱编程，开源爱好者，喜欢 Linux，GitHub 等。 喜欢干净整洁的代码，轻微代码洁癖。</p> "
+      }
     },
     {
       "issue_content_item": "issue-2-4",
-      "issue_item_title": "线程安全类的设计"
+      "issue_item_title": "线程安全类的设计",
+      "issue_date": "2014/04/01",
+      "authorInfo": {
+        "authorLink": "http://onev.cat",
+        "authorName": "onevcat",
+        "authorAvatar": "../static/onevcat.jpg",
+        "authorDescribe": "<p>王巍 (@onevcat) 是一名 iOS 和 Unity3D 开发者，现旅居日本，寻求创意之源</p> "
+      }
     },
     {
       "issue_content_item": "issue-2-5",
-      "issue_item_title": "测试并发程序"
+      "issue_item_title": "测试并发程序",
+      "issue_date": "2014/04/06",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/riven0951",
+        "authorName": "riven",
+        "authorAvatar": "../static/riven.jpg",
+        "authorDescribe": "<p>果粉，因为简洁和另类的语法用上了Python，现在一直在做iOS开发。喜欢收集外文歌曲和配乐，喜欢各种科幻电影。</p> "
+      }
     }
     ]
   },
@@ -58,27 +135,69 @@
     "issue_header_meta": "#3 - 2013 年 8 月",
     "issue_content_list": [{
       "issue_content_item": "issue-3-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": "2014/04/13",
+      "authorInfo": {
+        "authorLink": " ",
+        "authorName": " ",
+        "authorAvatar": " ",
+        "authorDescribe": " "
+      }
     },
     {
       "issue_content_item": "issue-3-1",
-      "issue_item_title": "绘制像素到屏幕上"
+      "issue_item_title": "绘制像素到屏幕上",
+      "issue_date": "2014/03/22",
+      "authorInfo": {
+        "authorLink": " ",
+        "authorName": " ",
+        "authorAvatar": " ",
+        "authorDescribe": " "
+      }
     },
     {
       "issue_content_item": "issue-3-2",
-      "issue_item_title": "理解 Scroll Views"
+      "issue_item_title": "理解 Scroll Views",
+      "issue_date": "2014/03/23",
+      "authorInfo": {
+        "authorLink": " ",
+        "authorName": " ",
+        "authorAvatar": " ",
+        "authorDescribe": " "
+      }
     },
     {
       "issue_content_item": "issue-3-3",
-      "issue_item_title": "自定义 Collection View 布局"
+      "issue_item_title": "自定义 Collection View 布局",
+      "issue_date": "2014/03/29",
+      "authorInfo": {
+        "authorLink": " ",
+        "authorName": " ",
+        "authorAvatar": " ",
+        "authorDescribe": " "
+      }
     },
     {
       "issue_content_item": "issue-3-4",
-      "issue_item_title": "自定义控件"
+      "issue_item_title": "自定义控件",
+      "issue_date": "2014/04/20",
+      "authorInfo": {
+        "authorLink": "http://objcio.com/",
+        "authorName": "migrant",
+        "authorAvatar": "../static/migrant.jpg",
+        "authorDescribe": "<p>橱窗里的荷兰赌徒</p> "
+      }
     },
     {
       "issue_content_item": "issue-3-5",
-      "issue_item_title": "先进的自动布局工具箱"
+      "issue_item_title": "先进的自动布局工具箱",
+      "issue_date": "2014/04/16",
+      "authorInfo": {
+        "authorLink": " ",
+        "authorName": " ",
+        "authorAvatar": " ",
+        "authorDescribe": " "
+      }
     }
     ]
   },
@@ -87,35 +206,91 @@
     "issue_header_meta": "#4 - 2013 年 9 月",
     "issue_content_list": [{
       "issue_content_item": "issue-4-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": "2014/03/28",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/fangyixiong",
+        "authorName": "方一雄",
+        "authorAvatar": "../static/fangyixiong.jpg",
+        "authorDescribe": "<p>iOS 程序员，iOS init 站长</p> "
+      }
     },
     {
       "issue_content_item": "issue-4-1",
-      "issue_item_title": "Core Data 概述"
+      "issue_item_title": "Core Data 概述",
+      "issue_date": "2014/03/29",
+      "authorInfo": {
+        "authorLink": " ",
+        "authorName": " ",
+        "authorAvatar": " ",
+        "authorDescribe": " "
+      }
     },
     {
       "issue_content_item": "issue-4-2",
-      "issue_item_title": "一个完整的 Core Data 应用"
+      "issue_item_title": "一个完整的 Core Data 应用",
+      "issue_date": "2014/04/13",
+      "authorInfo": {
+        "authorLink": " ",
+        "authorName": " ",
+        "authorAvatar": " ",
+        "authorDescribe": " "
+      }
     },
     {
       "issue_content_item": "issue-4-3",
-      "issue_item_title": "用 SQLite 和 FMDB 替代 Core Data"
+      "issue_item_title": "用 SQLite 和 FMDB 替代 Core Data",
+      "issue_date": "2014/04/16",
+      "authorInfo": {
+        "authorLink": " ",
+        "authorName": " ",
+        "authorAvatar": " ",
+        "authorDescribe": " "
+      }
     },
     {
       "issue_content_item": "issue-4-4",
-      "issue_item_title": "数据模型和模型对象"
+      "issue_item_title": "数据模型和模型对象",
+      "issue_date": "2014/04/13",
+      "authorInfo": {
+        "authorLink": "http://forkpanda.com",
+        "authorName": "熊猫",
+        "authorAvatar": "../static/panda.jpg",
+        "authorDescribe": "<p>@ForkPanda 正在潜心修行的iOS开发者，在不断的寻求蹂躏与自我蹂躏。</p> "
+      }
     },
     {
       "issue_content_item": "issue-4-5",
-      "issue_item_title": "导入大数据集"
+      "issue_item_title": "导入大数据集",
+      "issue_date": "2014/04/08",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/mrmign",
+        "authorName": "李明",
+        "authorAvatar": "../static/liming.jpg",
+        "authorDescribe": "<p>还是一名学生，正在努力进入iOS开发行列。</p> "
+      }
     },
     {
       "issue_content_item": "issue-4-6",
-      "issue_item_title": "Fetch 请求"
+      "issue_item_title": "Fetch 请求",
+      "issue_date": "2014/04/22",
+      "authorInfo": {
+        "authorLink": "http://blog.sina.com.cn/u/1867019351",
+        "authorName": "树叶",
+        "authorAvatar": "../static/shuye.jpg",
+        "authorDescribe": "<p>现就职于一家小型互联网创业公司，对 PC 和移动产品设计与开发均感兴趣，不过暂时还是在工作中和业余时间勤奋钻研的菜菜鸟。</p> "
+      }
     },
     {
       "issue_content_item": "issue-4-7",
-      "issue_item_title": "自定义 Core Data 迁移"
+      "issue_item_title": "自定义 Core Data 迁移",
+      "issue_date": "2014/04/18",
+      "authorInfo": {
+        "authorLink": "https://twitter.com/nixzhu",
+        "authorName": "朱宏旭",
+        "authorAvatar": "../static/nix.jpg",
+        "authorDescribe": "<p>留着长发的 NIX，用过几年 Linux，目前做 iOS 开发。喜欢科幻小说和科幻电影，因为幻想和梦境能带给我异世界体验。偶尔半梦半醒之间会质疑人生的意义，不知活着的所谓。</p> "
+      }
     }
     ]
   },
@@ -124,35 +299,91 @@
     "issue_header_meta": "#5 - 2013 年 10 月",
     "issue_content_list": [{
       "issue_content_item": "issue-5-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": "2014/03/20",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/fangyixiong",
+        "authorName": "方一雄",
+        "authorAvatar": "../static/fangyixiong.jpg",
+        "authorDescribe": "<p>iOS 程序员，iOS init 站长</p> "
+      }
     },
     {
       "issue_content_item": "issue-5-1",
-      "issue_item_title": "初识 TextKit"
+      "issue_item_title": "初识 TextKit",
+      "issue_date": "2014/03/23",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/u/2315855442",
+        "authorName": "和谐老约翰",
+        "authorAvatar": "../static/oldjohn.jpg",
+        "authorDescribe": "<p>码农 加里敦大学名誉教授...</p> "
+      }
     },
     {
       "issue_content_item": "issue-5-2",
-      "issue_item_title": "UICollectionView + UIKit 力学"
+      "issue_item_title": "UICollectionView + UIKit 力学",
+      "issue_date": "2014/03/23",
+      "authorInfo": {
+        "authorLink": "http://morisunshine.com",
+        "authorName": "黄宣冬",
+        "authorAvatar": "../static/huangxuanhua.jpg",
+        "authorDescribe": "<p>从事 iOS 应用开发的程序猿一枚，江湖自称治愈系萌汉子，优美代码追求者，正在人生漫漫路中缓缓前行。</p> "
+      }
     },
     {
       "issue_content_item": "issue-5-3",
-      "issue_item_title": "View Controller 转场"
+      "issue_item_title": "View Controller 转场",
+      "issue_date": "2014/04/06",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/fangyixiong",
+        "authorName": "方一雄",
+        "authorAvatar": "../static/fangyixiong.jpg",
+        "authorDescribe": "<p>iOS 程序员，iOS init 站长</p> "
+      }
     },
     {
       "issue_content_item": "issue-5-4",
-      "issue_item_title": "从 NSURLConnection 到 NSURLSession"
+      "issue_item_title": "从 NSURLConnection 到 NSURLSession",
+      "issue_date": "2014/04/11",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/fangyixiong",
+        "authorName": "方一雄",
+        "authorAvatar": "../static/fangyixiong.jpg",
+        "authorDescribe": "<p>iOS 程序员，iOS init 站长</p> "
+      }
     },
     {
       "issue_content_item": "issue-5-5",
-      "issue_item_title": "iOS 7 的多任务"
+      "issue_item_title": "iOS 7 的多任务",
+      "issue_date": "2014/04/21",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/ylovesy",
+        "authorName": "杨奕洋",
+        "authorAvatar": "../static/ylovesy.jpg",
+        "authorDescribe": "<p>微信 iOS 工程师</p> "
+      }
     },
     {
       "issue_content_item": "issue-5-6",
-      "issue_item_title": "iOS 7 : 隐藏技巧和变通之道"
+      "issue_item_title": "iOS 7 : 隐藏技巧和变通之道",
+      "issue_date": "2014/04/06",
+      "authorInfo": {
+        "authorLink": "http://ichuan.me",
+        "authorName": "宵练",
+        "authorAvatar": "../static/xiaolian.jpg",
+        "authorDescribe": "<p>前 iOS 开发者，现在重新走上 C++ 的不归路。伪清新学院派代表，培养中的爱好包括设计、摄影、作文。</p> "
+      }
     },
     {
       "issue_content_item": "issue-5-7",
-      "issue_item_title": "为 iOS 7 重新设计 App"
+      "issue_item_title": "为 iOS 7 重新设计 App",
+      "issue_date": "2014/04/16",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/fangyixiong",
+        "authorName": "方一雄",
+        "authorAvatar": "../static/fangyixiong.jpg",
+        "authorDescribe": "<p>iOS 程序员，iOS init 站长</p> "
+      }
     }
     ]
   },
@@ -161,27 +392,69 @@
     "issue_header_meta": "#6 - 2013 年 11 月",
     "issue_content_list": [{
       "issue_content_item": "issue-6-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": "2014/03/24",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/fangyixiong",
+        "authorName": "方一雄",
+        "authorAvatar": "../static/fangyixiong.jpg",
+        "authorDescribe": "<p>iOS 程序员，iOS init 站长</p> "
+      }
     },
     {
       "issue_content_item": "issue-6-1",
-      "issue_item_title": "Build 过程"
+      "issue_item_title": "Build 过程",
+      "issue_date": "2014/03/26",
+      "authorInfo": {
+        "authorLink": "http://beyondvincent.com",
+        "authorName": "破船",
+        "authorAvatar": "../static/pochuan.jpg",
+        "authorDescribe": "<p>破船是一名 iOS 开发者，目前工作在昆明。他在8小时之外还是一名业余跑者，爱好篮球。</p> "
+      }
     },
     {
       "issue_content_item": "issue-6-2",
-      "issue_item_title": "编译器"
+      "issue_item_title": "编译器",
+      "issue_date": "2014/03/23",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/beatifulcodes",
+        "authorName": "sunset",
+        "authorAvatar": "../static/sunset.jpg",
+        "authorDescribe": "<p>Female, (Mobile Application) R&amp;D Manager</p> "
+      }
     },
     {
       "issue_content_item": "issue-6-3",
-      "issue_item_title": "Mach-O 可执行文件"
+      "issue_item_title": "Mach-O 可执行文件",
+      "issue_date": "2014/03/31",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/u/2113020163",
+        "authorName": "流年一水",
+        "authorAvatar": "../static/liunianyishui.jpg",
+        "authorDescribe": "<p>心有多大世界才有多大，走到过的远方才叫疆域</p> "
+      }
     },
     {
       "issue_content_item": "issue-6-4",
-      "issue_item_title": "深入理解 CocoaPods"
+      "issue_item_title": "深入理解 CocoaPods",
+      "issue_date": "2014/04/21",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/poisondu",
+        "authorName": "Programmer毒",
+        "authorAvatar": "../static/poisondu.jpg",
+        "authorDescribe": "<p>iOS 开发，兴趣爱好太广泛</p> "
+      }
     },
     {
       "issue_content_item": "issue-6-5",
-      "issue_item_title": "为 iOS 建立 Travis CI"
+      "issue_item_title": "为 iOS 建立 Travis CI",
+      "issue_date": "2014/04/23",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/u/1883102275",
+        "authorName": "袁欣",
+        "authorAvatar": "../static/jason.jpg",
+        "authorDescribe": "<p>关注移动开发；玩一点萨克斯，架子鼓 ；游泳与网球入门者</p> "
+      }
     }
     ]
   },
@@ -190,31 +463,80 @@
     "issue_header_meta": "#7 - 2013 年 12 月",
     "issue_content_list": [{
       "issue_content_item": "issue-7-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": "2014/03/23",
+      "authorInfo": {
+        "authorLink": "http://jeoam.github.io/",
+        "authorName": "JeOam",
+        "authorAvatar": "../static/jeoam.jpg",
+        "authorDescribe": "<p>努力成为 iOS 开发者中，拖延症患者...</p> "
+      }
     },
     {
       "issue_content_item": "issue-7-1",
-      "issue_item_title": "基础集合类"
+      "issue_item_title": "基础集合类",
+      "issue_date": "2014/04/14",
+      "authorInfo": {
+        "authorLink": "http://objcio.com/",
+        "authorName": "migrant",
+        "authorAvatar": "../static/migrant.jpg",
+        "authorDescribe": "<p>橱窗里的荷兰赌徒</p> "
+      }
     },
     {
       "issue_content_item": "issue-7-2",
-      "issue_item_title": "值对象"
+      "issue_item_title": "值对象",
+      "issue_date": "2014/04/23",
+      "authorInfo": {
+        "authorLink": "http://onev.cat",
+        "authorName": "onevcat",
+        "authorAvatar": "../static/onevcat.jpg",
+        "authorDescribe": "<p>王巍 (@onevcat) 是一名 iOS 和 Unity3D 开发者，现旅居日本，寻求创意之源</p> "
+      }
     },
     {
       "issue_content_item": "issue-7-3",
-      "issue_item_title": "KVC 和 KVO"
+      "issue_item_title": "KVC 和 KVO",
+      "issue_date": "2014/04/04",
+      "authorInfo": {
+        "authorLink": "https://github.com/DJBen",
+        "authorName": "卢思豪",
+        "authorAvatar": "../static/DJBen.jpg",
+        "authorDescribe": "<p>iOS 开发者，目前就读 Johns Hopkins University</p> "
+      }
     },
     {
       "issue_content_item": "issue-7-4",
-      "issue_item_title": "消息传递机制"
+      "issue_item_title": "消息传递机制",
+      "issue_date": "2014/04/26",
+      "authorInfo": {
+        "authorLink": "https://github.com/DJBen",
+        "authorName": "卢思豪",
+        "authorAvatar": "../static/DJBen.jpg",
+        "authorDescribe": "<p>iOS 开发者，目前就读 Johns Hopkins University</p> "
+      }
     },
     {
       "issue_content_item": "issue-7-5",
-      "issue_item_title": "自定义 Formatters"
+      "issue_item_title": "自定义 Formatters",
+      "issue_date": "2014/04/01",
+      "authorInfo": {
+        "authorLink": "http://itouch2.github.io/",
+        "authorName": "Tu You",
+        "authorAvatar": "../static/itouch2.jpg",
+        "authorDescribe": "<p>iOS 爱好者，老友记爱好者，美食爱好者，喜欢研究各种移动小交互。</p> "
+      }
     },
     {
       "issue_content_item": "issue-7-6",
-      "issue_item_title": "语言标签"
+      "issue_item_title": "语言标签",
+      "issue_date": "2014/04/25",
+      "authorInfo": {
+        "authorLink": "http://onev.cat",
+        "authorName": "onevcat",
+        "authorAvatar": "../static/onevcat.jpg",
+        "authorDescribe": "<p>王巍 (@onevcat) 是一名 iOS 和 Unity3D 开发者，现旅居日本，寻求创意之源</p> "
+      }
     }
     ]
   },
@@ -223,23 +545,58 @@
     "issue_header_meta": "#8 - 2014 年 1 月",
     "issue_content_list": [{
       "issue_content_item": "issue-8-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": "2014/03/24",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/sdagon",
+        "authorName": "Vienta",
+        "authorAvatar": "../static/vienta.jpg",
+        "authorDescribe": "<p>iOS 开发者</p> "
+      }
     },
     {
       "issue_content_item": "issue-8-1",
-      "issue_item_title": "项目介绍"
+      "issue_item_title": "项目介绍",
+      "issue_date": "2014/04/24",
+      "authorInfo": {
+        "authorLink": "http://koofrank.com",
+        "authorName": "KooFrank",
+        "authorAvatar": "../static/koofrank.jpg",
+        "authorDescribe": "<p>iOS 开发者，有产品和技术洁癖</p> "
+      }
     },
     {
       "issue_content_item": "issue-8-2",
-      "issue_item_title": "与四轴无人机的通讯"
+      "issue_item_title": "与四轴无人机的通讯",
+      "issue_date": "2014/04/24",
+      "authorInfo": {
+        "authorLink": "http://diwu.me",
+        "authorName": "吴迪",
+        "authorAvatar": "../static/wudi.jpg",
+        "authorDescribe": "<p>@唯木念，创业者，iOS 从业者， 会写一些 Nodejs。</p> "
+      }
     },
     {
       "issue_content_item": "issue-8-3",
-      "issue_item_title": "导航应用"
+      "issue_item_title": "导航应用",
+      "issue_date": "2014/03/31",
+      "authorInfo": {
+        "authorLink": "http://diwu.me",
+        "authorName": "吴迪",
+        "authorAvatar": "../static/wudi.jpg",
+        "authorDescribe": "<p>@唯木念，创业者，iOS 从业者， 会写一些 Nodejs。</p> "
+      }
     },
     {
       "issue_content_item": "issue-8-4",
-      "issue_item_title": "客户端"
+      "issue_item_title": "客户端",
+      "issue_date": "2014/03/25",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/p/1005051822396587",
+        "authorName": "zinc",
+        "authorAvatar": "../static/zinc.jpg",
+        "authorDescribe": "<p>iOS 开发者，目前工作在北京。喜欢吉他，游戏爱好者。</p> "
+      }
     }
     ]
   },
@@ -248,27 +605,69 @@
     "issue_header_meta": "#9 - 2014 年 2 月",
     "issue_content_list": [{
       "issue_content_item": "issue-9-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": "2014/03/24",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/fangyixiong",
+        "authorName": "方一雄",
+        "authorAvatar": "../static/fangyixiong.jpg",
+        "authorDescribe": "<p>iOS 程序员，iOS init 站长</p> "
+      }
     },
     {
       "issue_content_item": "issue-9-1",
-      "issue_item_title": "NSString 与 Unicode"
+      "issue_item_title": "NSString 与 Unicode",
+      "issue_date": "2014/04/16",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/cbbcd",
+        "authorName": "陈彬彬",
+        "authorAvatar": "../static/cbb.jpg",
+        "authorDescribe": "<p>iOS 开发者，现居北京。排印爱好者。</p> "
+      }
     },
     {
       "issue_content_item": "issue-9-2",
-      "issue_item_title": "玩转字符串"
+      "issue_item_title": "玩转字符串",
+      "issue_date": "2014/03/23",
+      "authorInfo": {
+        "authorLink": "https://twitter.com/nixzhu",
+        "authorName": "朱宏旭",
+        "authorAvatar": "../static/nix.jpg",
+        "authorDescribe": "<p>留着长发的 NIX，用过几年 Linux，目前做 iOS 开发。喜欢科幻小说和科幻电影，因为幻想和梦境能带给我异世界体验。偶尔半梦半醒之间会质疑人生的意义，不知活着的所谓。</p> "
+      }
     },
     {
       "issue_content_item": "issue-9-3",
-      "issue_item_title": "字符串本地化"
+      "issue_item_title": "字符串本地化",
+      "issue_date": "2014/03/24",
+      "authorInfo": {
+        "authorLink": "http://ycflame.com/",
+        "authorName": "杨超",
+        "authorAvatar": "../static/yangchao.jpg",
+        "authorDescribe": "<p>Python 从业者，Mac 全键盘流用户，iOS 开发打怪练级中。从二次元到异次元均有涉猎，致力于为有趣的东西寻找意义，为无聊的生活赋予灵感。</p> "
+      }
     },
     {
       "issue_content_item": "issue-9-4",
-      "issue_item_title": "字符串解析"
+      "issue_item_title": "字符串解析",
+      "issue_date": "2014/03/25",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/riven0951",
+        "authorName": "riven",
+        "authorAvatar": "../static/riven.jpg",
+        "authorDescribe": "<p>果粉，因为简洁和另类的语法用上了Python，现在一直在做iOS开发。喜欢收集外文歌曲和配乐，喜欢各种科幻电影。</p> "
+      }
     },
     {
       "issue_content_item": "issue-9-5",
-      "issue_item_title": "字符串渲染"
+      "issue_item_title": "字符串渲染",
+      "issue_date": "2014/03/20",
+      "authorInfo": {
+        "authorLink": " ",
+        "authorName": " ",
+        "authorAvatar": " ",
+        "authorDescribe": " "
+      }
     }
     ]
   },
@@ -277,31 +676,80 @@
     "issue_header_meta": "#10 - 2014 年 3 月",
     "issue_content_list": [{
       "issue_content_item": "issue-10-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": "2014/04/03",
+      "authorInfo": {
+        "authorLink": "http://sjpsega.com",
+        "authorName": "sjpsega",
+        "authorAvatar": "../static/sjpsega.jpg",
+        "authorDescribe": "<p>iOS 爱好者，目标是开发几款有趣、实用的App</p> "
+      }
     },
     {
       "issue_content_item": "issue-10-1",
-      "issue_item_title": "数据同步"
+      "issue_item_title": "数据同步",
+      "issue_date": "2014/04/13",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/onetaway",
+        "authorName": "郭中强",
+        "authorAvatar": "../static/onetaway.jpg",
+        "authorDescribe": "<p>@Onetaway 旅居魔都的小小 iOS dev。有梦想，在飞翔</p> "
+      }
     },
     {
       "issue_content_item": "issue-10-2",
-      "issue_item_title": "iCloud 和 Core Data"
+      "issue_item_title": "iCloud 和 Core Data",
+      "issue_date": "2014/04/05",
+      "authorInfo": {
+        "authorLink": "http://diwu.me",
+        "authorName": "吴迪",
+        "authorAvatar": "../static/wudi.jpg",
+        "authorDescribe": "<p>@唯木念，创业者，iOS 从业者， 会写一些 Nodejs。</p> "
+      }
     },
     {
       "issue_content_item": "issue-10-3",
-      "issue_item_title": "精通 iCloud 文档存储"
+      "issue_item_title": "精通 iCloud 文档存储",
+      "issue_date": "2014/04/20",
+      "authorInfo": {
+        "authorLink": "http://objcio.com/",
+        "authorName": "migrant",
+        "authorAvatar": "../static/migrant.jpg",
+        "authorDescribe": "<p>橱窗里的荷兰赌徒</p> "
+      }
     },
     {
       "issue_content_item": "issue-10-4",
-      "issue_item_title": "同步案例学习"
+      "issue_item_title": "同步案例学习",
+      "issue_date": "2014/03/20",
+      "authorInfo": {
+        "authorLink": "http://ycflame.com/",
+        "authorName": "杨超",
+        "authorAvatar": "../static/yangchao.jpg",
+        "authorDescribe": "<p>Python 从业者，Mac 全键盘流用户，iOS 开发打怪练级中。从二次元到异次元均有涉猎，致力于为有趣的东西寻找意义，为无聊的生活赋予灵感。</p> "
+      }
     },
     {
       "issue_content_item": "issue-10-5",
-      "issue_item_title": "Core Data 网络应用实例"
+      "issue_item_title": "Core Data 网络应用实例",
+      "issue_date": "2014/04/19",
+      "authorInfo": {
+        "authorLink": " ",
+        "authorName": " ",
+        "authorAvatar": " ",
+        "authorDescribe": " "
+      }
     },
     {
       "issue_content_item": "issue-10-6",
-      "issue_item_title": "IP，TCP 和 HTTP"
+      "issue_item_title": "IP，TCP 和 HTTP",
+      "issue_date": "2014/03/23",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/beatifulcodes",
+        "authorName": "sunset",
+        "authorAvatar": "../static/sunset.jpg",
+        "authorDescribe": "<p>Female, (Mobile Application) R&amp;D Manager</p> "
+      }
     }
     ]
   },
@@ -310,31 +758,80 @@
     "issue_header_meta": "#11 - 2014 年 4 月",
     "issue_content_list": [{
       "issue_content_item": "issue-11-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": "2014/04/03",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/fangyixiong",
+        "authorName": "方一雄",
+        "authorAvatar": "../static/fangyixiong.jpg",
+        "authorDescribe": "<p>iOS 程序员，iOS init 站长</p> "
+      }
     },
     {
       "issue_content_item": "issue-11-1",
-      "issue_item_title": "iOS 开发者的 Android 第一课"
+      "issue_item_title": "iOS 开发者的 Android 第一课",
+      "issue_date": "2014/04/12",
+      "authorInfo": {
+        "authorLink": "https://twitter.com/nixzhu",
+        "authorName": "朱宏旭",
+        "authorAvatar": "../static/nix.jpg",
+        "authorDescribe": "<p>留着长发的 NIX，用过几年 Linux，目前做 iOS 开发。喜欢科幻小说和科幻电影，因为幻想和梦境能带给我异世界体验。偶尔半梦半醒之间会质疑人生的意义，不知活着的所谓。</p> "
+      }
     },
     {
       "issue_content_item": "issue-11-2",
-      "issue_item_title": "Android Intents"
+      "issue_item_title": "Android Intents",
+      "issue_date": "2014/04/17",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/beatifulcodes",
+        "authorName": "sunset",
+        "authorAvatar": "../static/sunset.jpg",
+        "authorDescribe": "<p>Female, (Mobile Application) R&amp;D Manager</p> "
+      }
     },
     {
       "issue_content_item": "issue-11-3",
-      "issue_item_title": "响应式 Android 应用"
+      "issue_item_title": "响应式 Android 应用",
+      "issue_date": "2014/04/19",
+      "authorInfo": {
+        "authorLink": "http://daisyyaya.github.io",
+        "authorName": "Daisyyaya",
+        "authorAvatar": "../static/daisyyaya.jpg",
+        "authorDescribe": "<p>On the road to be a qualified iOS programmer and UI designer.</p> "
+      }
     },
     {
       "issue_content_item": "issue-11-4",
-      "issue_item_title": "Android 通知中心"
+      "issue_item_title": "Android 通知中心",
+      "issue_date": "2014/04/07",
+      "authorInfo": {
+        "authorLink": "http://diwu.me",
+        "authorName": "吴迪",
+        "authorAvatar": "../static/wudi.jpg",
+        "authorDescribe": "<p>@唯木念，创业者，iOS 从业者， 会写一些 Nodejs。</p> "
+      }
     },
     {
       "issue_content_item": "issue-11-5",
-      "issue_item_title": "Android 中的 SQLite 数据库支持"
+      "issue_item_title": "Android 中的 SQLite 数据库支持",
+      "issue_date": "2014/04/15",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/p/1005051822396587",
+        "authorName": "zinc",
+        "authorAvatar": "../static/zinc.jpg",
+        "authorDescribe": "<p>iOS 开发者，目前工作在北京。喜欢吉他，游戏爱好者。</p> "
+      }
     },
     {
       "issue_content_item": "issue-11-6",
-      "issue_item_title": "依赖注入和注解，为什么 Java 比你想象的要好"
+      "issue_item_title": "依赖注入和注解，为什么 Java 比你想象的要好",
+      "issue_date": "2014/04/12",
+      "authorInfo": {
+        "authorLink": "http://bayonetta.github.io",
+        "authorName": "赵帅",
+        "authorAvatar": "../static/Bayonetta.jpg",
+        "authorDescribe": "<p>@Bayonetta，iOS/Android 爱好者，目前任职于 Weico</p> "
+      }
     }
     ]
   },
@@ -343,31 +840,80 @@
     "issue_header_meta": "#12 - 2014 年 5 月",
     "issue_content_list": [{
       "issue_content_item": "issue-12-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": "2014/05/18",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/fangyixiong",
+        "authorName": "方一雄",
+        "authorAvatar": "../static/fangyixiong.jpg",
+        "authorDescribe": "<p>iOS 程序员，iOS init 站长</p> "
+      }
     },
     {
       "issue_content_item": "issue-12-1",
-      "issue_item_title": "动画解释"
+      "issue_item_title": "动画解释",
+      "issue_date": "2014/05/15",
+      "authorInfo": {
+        "authorLink": "http://ckitakishi.com",
+        "authorName": "Ckitakishi",
+        "authorAvatar": "../static/Ckitakishi.jpg",
+        "authorDescribe": "<p>iOS 开发者，懂一点 web 前端开发。正在为写出优美的代码而修炼。</p> "
+      }
     },
     {
       "issue_content_item": "issue-12-2",
-      "issue_item_title": "Layer 中自定义属性的动画"
+      "issue_item_title": "Layer 中自定义属性的动画",
+      "issue_date": "2014/05/10",
+      "authorInfo": {
+        "authorLink": "https://twitter.com/nixzhu",
+        "authorName": "朱宏旭",
+        "authorAvatar": "../static/nix.jpg",
+        "authorDescribe": "<p>留着长发的 NIX，用过几年 Linux，目前做 iOS 开发。喜欢科幻小说和科幻电影，因为幻想和梦境能带给我异世界体验。偶尔半梦半醒之间会质疑人生的意义，不知活着的所谓。</p> "
+      }
     },
     {
       "issue_content_item": "issue-12-3",
-      "issue_item_title": "自定义 ViewController 容器转场"
+      "issue_item_title": "自定义 ViewController 容器转场",
+      "issue_date": "2014/05/12",
+      "authorInfo": {
+        "authorLink": "http://blog.codingcoder.com",
+        "authorName": "破土君",
+        "authorAvatar": "../static/potu.jpg",
+        "authorDescribe": "<p>努力做一只懂产品的猿，放慢脚步，去感受生活的美好。</p> "
+      }
     },
     {
       "issue_content_item": "issue-12-4",
-      "issue_item_title": "View-Layer 协作"
+      "issue_item_title": "View-Layer 协作",
+      "issue_date": "2014/05/13",
+      "authorInfo": {
+        "authorLink": "http://onev.cat",
+        "authorName": "onevcat",
+        "authorAvatar": "../static/onevcat.jpg",
+        "authorDescribe": "<p>王巍 (@onevcat) 是一名 iOS 和 Unity3D 开发者，现旅居日本，寻求创意之源</p> "
+      }
     },
     {
       "issue_content_item": "issue-12-5",
-      "issue_item_title": "Collection View 动画"
+      "issue_item_title": "Collection View 动画",
+      "issue_date": "2014/05/12",
+      "authorInfo": {
+        "authorLink": "http://diwu.me",
+        "authorName": "吴迪",
+        "authorAvatar": "../static/wudi.jpg",
+        "authorDescribe": "<p>@唯木念，创业者，iOS 从业者， 会写一些 Nodejs。</p> "
+      }
     },
     {
       "issue_content_item": "issue-12-6",
-      "issue_item_title": "交互式动画"
+      "issue_item_title": "交互式动画",
+      "issue_date": "2014/05/18",
+      "authorInfo": {
+        "authorLink": "http://morisunshine.com",
+        "authorName": "黄宣冬",
+        "authorAvatar": "../static/huangxuanhua.jpg",
+        "authorDescribe": "<p>从事 iOS 应用开发的程序猿一枚，江湖自称治愈系萌汉子，优美代码追求者，正在人生漫漫路中缓缓前行。</p> "
+      }
     }
     ]
   },
@@ -376,27 +922,69 @@
     "issue_header_meta": "#13 - 2014 年 6 月",
     "issue_content_list": [{
       "issue_content_item": "issue-13-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": "2014/06/19",
+      "authorInfo": {
+        "authorLink": "http://forkpanda.com",
+        "authorName": "熊猫",
+        "authorAvatar": "../static/panda.jpg",
+        "authorDescribe": "<p>@ForkPanda 正在潜心修行的iOS开发者，在不断的寻求蹂躏与自我蹂躏。</p> "
+      }
     },
     {
       "issue_content_item": "issue-13-1",
-      "issue_item_title": "MVVM 介绍"
+      "issue_item_title": "MVVM 介绍",
+      "issue_date": "2014/06/10",
+      "authorInfo": {
+        "authorLink": "https://twitter.com/nixzhu",
+        "authorName": "朱宏旭",
+        "authorAvatar": "../static/nix.jpg",
+        "authorDescribe": "<p>留着长发的 NIX，用过几年 Linux，目前做 iOS 开发。喜欢科幻小说和科幻电影，因为幻想和梦境能带给我异世界体验。偶尔半梦半醒之间会质疑人生的意义，不知活着的所谓。</p> "
+      }
     },
     {
       "issue_content_item": "issue-13-2",
-      "issue_item_title": "避免滥用单例"
+      "issue_item_title": "避免滥用单例",
+      "issue_date": "2014/06/15",
+      "authorInfo": {
+        "authorLink": "http://blog.codingcoder.com",
+        "authorName": "破土君",
+        "authorAvatar": "../static/potu.jpg",
+        "authorDescribe": "<p>努力做一只懂产品的猿，放慢脚步，去感受生活的美好。</p> "
+      }
     },
     {
       "issue_content_item": "issue-13-3",
-      "issue_item_title": "iOS 中的行为"
+      "issue_item_title": "iOS 中的行为",
+      "issue_date": "2014/06/13",
+      "authorInfo": {
+        "authorLink": "http://forkpanda.com",
+        "authorName": "熊猫",
+        "authorAvatar": "../static/panda.jpg",
+        "authorDescribe": "<p>@ForkPanda 正在潜心修行的iOS开发者，在不断的寻求蹂躏与自我蹂躏。</p> "
+      }
     },
     {
       "issue_content_item": "issue-13-4",
-      "issue_item_title": "子类"
+      "issue_item_title": "子类",
+      "issue_date": "2014/06/12",
+      "authorInfo": {
+        "authorLink": "http://www.phenmod.com",
+        "authorName": "朱兴灿",
+        "authorAvatar": "../static/phenmod.jpg",
+        "authorDescribe": "<p>@phenmod，新奇有趣事务爱好者，心中常念“坐忘”，的中二青年。</p> "
+      }
     },
     {
       "issue_content_item": "issue-13-5",
-      "issue_item_title": "使用 VIPER 构建 iOS 应用"
+      "issue_item_title": "使用 VIPER 构建 iOS 应用",
+      "issue_date": "2014/06/19",
+      "authorInfo": {
+        "authorLink": "http://diwu.me",
+        "authorName": "吴迪",
+        "authorAvatar": "../static/wudi.jpg",
+        "authorDescribe": "<p>@唯木念，创业者，iOS 从业者， 会写一些 Nodejs。</p> "
+      }
     }
     ]
   },
@@ -405,27 +993,69 @@
     "issue_header_meta": "#14 - 2014 年 7 月",
     "issue_content_list": [{
       "issue_content_item": "issue-14-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": "2014/07/26",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/johnnywjy",
+        "authorName": "Johnny Wu",
+        "authorAvatar": "../static/johnnywjy.jpg",
+        "authorDescribe": "<p>iOS 攻城尸，死理性派，资深深夜党</p> "
+      }
     },
     {
       "issue_content_item": "issue-14-1",
-      "issue_item_title": "使 Mac 应用数据脚本化"
+      "issue_item_title": "使 Mac 应用数据脚本化",
+      "issue_date": "2014/07/26",
+      "authorInfo": {
+        "authorLink": "http://ckitakishi.com",
+        "authorName": "Ckitakishi",
+        "authorAvatar": "../static/Ckitakishi.jpg",
+        "authorDescribe": "<p>iOS 开发者，懂一点 web 前端开发。正在为写出优美的代码而修炼。</p> "
+      }
     },
     {
       "issue_content_item": "issue-14-2",
-      "issue_item_title": "在沙盒中编写脚本"
+      "issue_item_title": "在沙盒中编写脚本",
+      "issue_date": "2014/07/26",
+      "authorInfo": {
+        "authorLink": "http://onev.cat",
+        "authorName": "onevcat",
+        "authorAvatar": "../static/onevcat.jpg",
+        "authorDescribe": "<p>王巍 (@onevcat) 是一名 iOS 和 Unity3D 开发者，现旅居日本，寻求创意之源</p> "
+      }
     },
     {
       "issue_content_item": "issue-14-3",
-      "issue_item_title": "插件"
+      "issue_item_title": "插件",
+      "issue_date": "2014/07/23",
+      "authorInfo": {
+        "authorLink": "http://www.linxiangyu.org/",
+        "authorName": "林翔宇",
+        "authorAvatar": "../static/oa414.jpg",
+        "authorDescribe": "<p>会写一些 iOS，Andorid 和 Rails。</p> "
+      }
     },
     {
       "issue_content_item": "issue-14-4",
-      "issue_item_title": "XPC"
+      "issue_item_title": "XPC",
+      "issue_date": "2014/07/18",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/hewigovens",
+        "authorName": "徐涛",
+        "authorAvatar": "../static/xutao.jpg",
+        "authorDescribe": "<p>Indie Mac/iOS Developer</p> "
+      }
     },
     {
       "issue_content_item": "issue-14-5",
-      "issue_item_title": "从 UIKit 到 AppKit"
+      "issue_item_title": "从 UIKit 到 AppKit",
+      "issue_date": "2014/07/26",
+      "authorInfo": {
+        "authorLink": "http://rm1210.github.io/",
+        "authorName": "Rm1210",
+        "authorAvatar": "../static/crazycatcher.jpg",
+        "authorDescribe": "<p>Mac/iOS 开发者，会写一些 Python</p> "
+      }
     }
     ]
   },
@@ -434,35 +1064,91 @@
     "issue_header_meta": "#15 - 2014 年 8 月",
     "issue_content_list": [{
       "issue_content_item": "issue-15-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": "2014/09/08",
+      "authorInfo": {
+        "authorLink": "http://yulingtianxia.com",
+        "authorName": "杨萧玉",
+        "authorAvatar": "../static/yangxiaoyu.jpg",
+        "authorDescribe": "<p>曾痴迷于 Web &amp; Android，正努力修炼成为一只合格的 iOS 程序猿，处女座嗜睡学生党。</p> "
+      }
     },
     {
       "issue_content_item": "issue-15-1",
-      "issue_item_title": "行为驱动开发"
+      "issue_item_title": "行为驱动开发",
+      "issue_date": "2014/09/01",
+      "authorInfo": {
+        "authorLink": "http://diwu.me",
+        "authorName": "吴迪",
+        "authorAvatar": "../static/wudi.jpg",
+        "authorDescribe": "<p>@唯木念，创业者，iOS 从业者， 会写一些 Nodejs。</p> "
+      }
     },
     {
       "issue_content_item": "issue-15-2",
-      "issue_item_title": "XCTest 测试实战"
+      "issue_item_title": "XCTest 测试实战",
+      "issue_date": "2014/09/01",
+      "authorInfo": {
+        "authorLink": "http://morisunshine.com",
+        "authorName": "黄宣冬",
+        "authorAvatar": "../static/huangxuanhua.jpg",
+        "authorDescribe": "<p>从事 iOS 应用开发的程序猿一枚，江湖自称治愈系萌汉子，优美代码追求者，正在人生漫漫路中缓缓前行。</p> "
+      }
     },
     {
       "issue_content_item": "issue-15-3",
-      "issue_item_title": "依赖注入"
+      "issue_item_title": "依赖注入",
+      "issue_date": "2014/09/08",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/beatifulcodes",
+        "authorName": "sunset",
+        "authorAvatar": "../static/sunset.jpg",
+        "authorDescribe": "<p>Female, (Mobile Application) R&amp;D Manager</p> "
+      }
     },
     {
       "issue_content_item": "issue-15-4",
-      "issue_item_title": "糟糕的测试"
+      "issue_item_title": "糟糕的测试",
+      "issue_date": "2014/09/01",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/onetaway",
+        "authorName": "郭中强",
+        "authorAvatar": "../static/onetaway.jpg",
+        "authorDescribe": "<p>@Onetaway 旅居魔都的小小 iOS dev。有梦想，在飞翔</p> "
+      }
     },
     {
       "issue_content_item": "issue-15-5",
-      "issue_item_title": "置换测试: Mock, Stub 和其他"
+      "issue_item_title": "置换测试: Mock, Stub 和其他",
+      "issue_date": "2014/08/21",
+      "authorInfo": {
+        "authorLink": "http://ryantang.me",
+        "authorName": "唐韧",
+        "authorAvatar": "../static/tangren.jpg",
+        "authorDescribe": "<p>@唐韧_Ryan，iOS 和 Android 开发者，参与创业中，业余跑者、爱好汽车！</p> "
+      }
     },
     {
       "issue_content_item": "issue-15-6",
-      "issue_item_title": "UI 测试"
+      "issue_item_title": "UI 测试",
+      "issue_date": "2014/08/22",
+      "authorInfo": {
+        "authorLink": "http://blog.callmewhy.com",
+        "authorName": "汪海洋",
+        "authorAvatar": "../static/callmewhy.jpg",
+        "authorDescribe": "<p>@请叫我汪二 热爱 HTML5 和 Python 的 iOS 开发者，喜欢倒腾精致而实用的小玩意儿。</p> "
+      }
     },
     {
       "issue_content_item": "issue-15-7",
-      "issue_item_title": "截图测试"
+      "issue_item_title": "截图测试",
+      "issue_date": "2014/08/17",
+      "authorInfo": {
+        "authorLink": "http://www.linxiangyu.org/",
+        "authorName": "林翔宇",
+        "authorAvatar": "../static/oa414.jpg",
+        "authorDescribe": "<p>会写一些 iOS，Andorid 和 Rails。</p> "
+      }
     }
     ]
   },
@@ -471,27 +1157,69 @@
     "issue_header_meta": "#16 - 2014 年 9 月",
     "issue_content_list": [{
       "issue_content_item": "issue-16-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": "2014/09/21",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/hewigovens",
+        "authorName": "徐涛",
+        "authorAvatar": "../static/xutao.jpg",
+        "authorDescribe": "<p>Indie Mac/iOS Developer</p> "
+      }
     },
     {
       "issue_content_item": "issue-16-1",
-      "issue_item_title": "Swift 的强大之处"
+      "issue_item_title": "Swift 的强大之处",
+      "issue_date": "2014/09/14",
+      "authorInfo": {
+        "authorLink": "http://scoooter.io",
+        "authorName": "李子轩",
+        "authorAvatar": "../static/lizixuan.jpg",
+        "authorDescribe": "<p>李子轩 - iOS/Rails工程师 - 创始人@scoooter.io - Purdue</p> "
+      }
     },
     {
       "issue_content_item": "issue-16-2",
-      "issue_item_title": "结构体和值类型"
+      "issue_item_title": "结构体和值类型",
+      "issue_date": "2014/09/19",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/onetaway",
+        "authorName": "郭中强",
+        "authorAvatar": "../static/onetaway.jpg",
+        "authorDescribe": "<p>@Onetaway 旅居魔都的小小 iOS dev。有梦想，在飞翔</p> "
+      }
     },
     {
       "issue_content_item": "issue-16-3",
-      "issue_item_title": "Swift 方法的多面性"
+      "issue_item_title": "Swift 方法的多面性",
+      "issue_date": "2014/09/21",
+      "authorInfo": {
+        "authorLink": "http://diwu.me",
+        "authorName": "吴迪",
+        "authorAvatar": "../static/wudi.jpg",
+        "authorDescribe": "<p>@唯木念，创业者，iOS 从业者， 会写一些 Nodejs。</p> "
+      }
     },
     {
       "issue_content_item": "issue-16-4",
-      "issue_item_title": "Swift 的函数式 API"
+      "issue_item_title": "Swift 的函数式 API",
+      "issue_date": "2014/09/14",
+      "authorInfo": {
+        "authorLink": "http://blog.callmewhy.com",
+        "authorName": "汪海洋",
+        "authorAvatar": "../static/callmewhy.jpg",
+        "authorDescribe": "<p>@请叫我汪二 热爱 HTML5 和 Python 的 iOS 开发者，喜欢倒腾精致而实用的小玩意儿。</p> "
+      }
     },
     {
       "issue_content_item": "issue-16-5",
-      "issue_item_title": "Playground 快速原型制作"
+      "issue_item_title": "Playground 快速原型制作",
+      "issue_date": "2014/09/21",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/poisondu",
+        "authorName": "Programmer毒",
+        "authorAvatar": "../static/poisondu.jpg",
+        "authorDescribe": "<p>iOS 开发，兴趣爱好太广泛</p> "
+      }
     }
     ]
   },
@@ -500,19 +1228,47 @@
     "issue_header_meta": "#17 - 2014 年 10 月",
     "issue_content_list": [{
       "issue_content_item": "issue-17-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": "2014/10/17",
+      "authorInfo": {
+        "authorLink": "http://diwu.me",
+        "authorName": "吴迪",
+        "authorAvatar": "../static/wudi.jpg",
+        "authorDescribe": "<p>@唯木念，创业者，iOS 从业者， 会写一些 Nodejs。</p> "
+      }
     },
     {
       "issue_content_item": "issue-17-1",
-      "issue_item_title": "为什么今天安全仍然重要"
+      "issue_item_title": "为什么今天安全仍然重要",
+      "issue_date": "2014/10/17",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/poisondu",
+        "authorName": "Programmer毒",
+        "authorAvatar": "../static/poisondu.jpg",
+        "authorDescribe": "<p>iOS 开发，兴趣爱好太广泛</p> "
+      }
     },
     {
       "issue_content_item": "issue-17-2",
-      "issue_item_title": "代码签名探析"
+      "issue_item_title": "代码签名探析",
+      "issue_date": "2014/10/15",
+      "authorInfo": {
+        "authorLink": "http://blog.fengweizhou.com/",
+        "authorName": "dopcn",
+        "authorAvatar": "../static/dopcn.jpg",
+        "authorDescribe": "<p>@dopcn 做不任性的程序员</p> "
+      }
     },
     {
       "issue_content_item": "issue-17-3",
-      "issue_item_title": "收据验证"
+      "issue_item_title": "收据验证",
+      "issue_date": "2014/10/13",
+      "authorInfo": {
+        "authorLink": "http://blog.callmewhy.com",
+        "authorName": "汪海洋",
+        "authorAvatar": "../static/callmewhy.jpg",
+        "authorDescribe": "<p>@请叫我汪二 热爱 HTML5 和 Python 的 iOS 开发者，喜欢倒腾精致而实用的小玩意儿。</p> "
+      }
     }
     ]
   },
@@ -521,27 +1277,69 @@
     "issue_header_meta": "#18 - 2014 年 11 月",
     "issue_content_list": [{
       "issue_content_item": "issue-18-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": "2014/12/04",
+      "authorInfo": {
+        "authorLink": "http://yulingtianxia.com",
+        "authorName": "杨萧玉",
+        "authorAvatar": "../static/yangxiaoyu.jpg",
+        "authorDescribe": "<p>曾痴迷于 Web &amp; Android，正努力修炼成为一只合格的 iOS 程序猿，处女座嗜睡学生党。</p> "
+      }
     },
     {
       "issue_content_item": "issue-18-1",
-      "issue_item_title": "设计优雅的移动游戏"
+      "issue_item_title": "设计优雅的移动游戏",
+      "issue_date": "2014/12/01",
+      "authorInfo": {
+        "authorLink": "http://diwu.me",
+        "authorName": "吴迪",
+        "authorAvatar": "../static/wudi.jpg",
+        "authorDescribe": "<p>@唯木念，创业者，iOS 从业者， 会写一些 Nodejs。</p> "
+      }
     },
     {
       "issue_content_item": "issue-18-2",
-      "issue_item_title": "Metal"
+      "issue_item_title": "Metal",
+      "issue_date": "2014/11/26",
+      "authorInfo": {
+        "authorLink": "http://objcio.com/",
+        "authorName": "migrant",
+        "authorAvatar": "../static/migrant.jpg",
+        "authorDescribe": "<p>橱窗里的荷兰赌徒</p> "
+      }
     },
     {
       "issue_content_item": "issue-18-3",
-      "issue_item_title": "Scene Kit"
+      "issue_item_title": "Scene Kit",
+      "issue_date": "2014/11/28",
+      "authorInfo": {
+        "authorLink": "http://blog.sunnyxx.com",
+        "authorName": "孙源",
+        "authorAvatar": "../static/sunyuan.jpg",
+        "authorDescribe": "<p>孙源@sunnyxx 90 后非主流 iOS 程序猿，不约谢谢</p> "
+      }
     },
     {
       "issue_content_item": "issue-18-4",
-      "issue_item_title": "游戏中的多点互联"
+      "issue_item_title": "游戏中的多点互联",
+      "issue_date": "2014/11/18",
+      "authorInfo": {
+        "authorLink": "http://blog.callmewhy.com",
+        "authorName": "汪海洋",
+        "authorAvatar": "../static/callmewhy.jpg",
+        "authorDescribe": "<p>@请叫我汪二 热爱 HTML5 和 Python 的 iOS 开发者，喜欢倒腾精致而实用的小玩意儿。</p> "
+      }
     },
     {
       "issue_content_item": "issue-18-5",
-      "issue_item_title": "虚拟音域 - 声音设计的艺术"
+      "issue_item_title": "虚拟音域 - 声音设计的艺术",
+      "issue_date": "2014/12/04",
+      "authorInfo": {
+        "authorLink": "http://blog.sina.com.cn/u/1867019351",
+        "authorName": "树叶",
+        "authorAvatar": "../static/shuye.jpg",
+        "authorDescribe": "<p>现就职于一家小型互联网创业公司，对 PC 和移动产品设计与开发均感兴趣，不过暂时还是在工作中和业余时间勤奋钻研的菜菜鸟。</p> "
+      }
     }
     ]
   },
@@ -550,27 +1348,69 @@
     "issue_header_meta": "#19 - 2014 年 12 月",
     "issue_content_list": [{
       "issue_content_item": "issue-19-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": "2014/12/22",
+      "authorInfo": {
+        "authorLink": "http://bifidy.net",
+        "authorName": "bifidy",
+        "authorAvatar": "../static/bifidy.jpg",
+        "authorDescribe": "<p>一个喜欢写很多东西的野生程序员，最近在努力写更好的代码与技术博客。</p> "
+      }
     },
     {
       "issue_content_item": "issue-19-1",
-      "issue_item_title": "调试：案例学习"
+      "issue_item_title": "调试：案例学习",
+      "issue_date": "2014/12/19",
+      "authorInfo": {
+        "authorLink": "http://diwu.me",
+        "authorName": "吴迪",
+        "authorAvatar": "../static/wudi.jpg",
+        "authorDescribe": "<p>@唯木念，创业者，iOS 从业者， 会写一些 Nodejs。</p> "
+      }
     },
     {
       "issue_content_item": "issue-19-2",
-      "issue_item_title": "与调试器共舞 - LLDB 的华尔兹"
+      "issue_item_title": "与调试器共舞 - LLDB 的华尔兹",
+      "issue_date": "2014/12/19",
+      "authorInfo": {
+        "authorLink": "https://github.com/nangege",
+        "authorName": "nangege",
+        "authorAvatar": "../static/nangege.jpg",
+        "authorDescribe": "<p>现在是程序员，希望以后成为会写代码的设计师。喜欢简单的东西。</p> "
+      }
     },
     {
       "issue_content_item": "issue-19-3",
-      "issue_item_title": "调试核对清单"
+      "issue_item_title": "调试核对清单",
+      "issue_date": "2014/12/16",
+      "authorInfo": {
+        "authorLink": "http://bifidy.net",
+        "authorName": "bifidy",
+        "authorAvatar": "../static/bifidy.jpg",
+        "authorDescribe": "<p>一个喜欢写很多东西的野生程序员，最近在努力写更好的代码与技术博客。</p> "
+      }
     },
     {
       "issue_content_item": "issue-19-4",
-      "issue_item_title": "DTrace"
+      "issue_item_title": "DTrace",
+      "issue_date": "2014/12/22",
+      "authorInfo": {
+        "authorLink": "http://objcio.com/",
+        "authorName": "migrant",
+        "authorAvatar": "../static/migrant.jpg",
+        "authorDescribe": "<p>橱窗里的荷兰赌徒</p> "
+      }
     },
     {
       "issue_content_item": "issue-19-5",
-      "issue_item_title": "活动追踪"
+      "issue_item_title": "活动追踪",
+      "issue_date": "2014/12/15",
+      "authorInfo": {
+        "authorLink": "http://blog.fengweizhou.com/",
+        "authorName": "dopcn",
+        "authorAvatar": "../static/dopcn.jpg",
+        "authorDescribe": "<p>@dopcn 做不任性的程序员</p> "
+      }
     }
     ]
   },
@@ -579,19 +1419,47 @@
     "issue_header_meta": "#20 - 2015 年 1 月",
     "issue_content_list": [{
       "issue_content_item": "issue-20-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": "2015/01/23",
+      "authorInfo": {
+        "authorLink": "http://bifidy.net",
+        "authorName": "bifidy",
+        "authorAvatar": "../static/bifidy.jpg",
+        "authorDescribe": "<p>一个喜欢写很多东西的野生程序员，最近在努力写更好的代码与技术博客。</p> "
+      }
     },
     {
       "issue_content_item": "issue-20-1",
-      "issue_item_title": "终身学习的一代人"
+      "issue_item_title": "终身学习的一代人",
+      "issue_date": "2015/01/21",
+      "authorInfo": {
+        "authorLink": "http://www.aprilme.com",
+        "authorName": "April",
+        "authorAvatar": "../static/april.jpg",
+        "authorDescribe": " <p>做 iOS / Mac / Web 开发的大白羊小妹儿~</p> "
+      }
     },
     {
       "issue_content_item": "issue-2O-2",
-      "issue_item_title": "让东西变得不那么糟"
+      "issue_item_title": "让东西变得不那么糟",
+      "issue_date": "2015/01/23",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/poisondu",
+        "authorName": "Programmer毒",
+        "authorAvatar": "../static/poisondu.jpg",
+        "authorDescribe": "<p>iOS 开发，兴趣爱好太广泛</p> "
+      }
     },
     {
       "issue_content_item": "issue-20-3",
-      "issue_item_title": "学无止境"
+      "issue_item_title": "学无止境",
+      "issue_date": "2015/01/20",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/hewigovens",
+        "authorName": "徐涛",
+        "authorAvatar": "../static/xutao.jpg",
+        "authorDescribe": "<p>Indie Mac/iOS Developer</p> "
+      }
     }
     ]
   },
@@ -600,43 +1468,113 @@
     "issue_header_meta": "#21 - 2015 年 2 月",
     "issue_content_list": [{
       "issue_content_item": "issue-21-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": "2015/03/05",
+      "authorInfo": {
+        "authorLink": "http://bifidy.net",
+        "authorName": "bifidy",
+        "authorAvatar": "../static/bifidy.jpg",
+        "authorDescribe": "<p>一个喜欢写很多东西的野生程序员，最近在努力写更好的代码与技术博客。</p> "
+      }
     },
     {
       "issue_content_item": "issue-21-1",
-      "issue_item_title": "相机工作原理"
+      "issue_item_title": "相机工作原理",
+      "issue_date": "2015/02/21",
+      "authorInfo": {
+        "authorLink": "http://onev.cat",
+        "authorName": "onevcat",
+        "authorAvatar": "../static/onevcat.jpg",
+        "authorDescribe": "<p>王巍 (@onevcat) 是一名 iOS 和 Unity3D 开发者，现旅居日本，寻求创意之源</p> "
+      }
     },
     {
       "issue_content_item": "issue-21-2",
-      "issue_item_title": "图片格式"
+      "issue_item_title": "图片格式",
+      "issue_date": "2015/03/04",
+      "authorInfo": {
+        "authorLink": "http://bifidy.net",
+        "authorName": "bifidy",
+        "authorAvatar": "../static/bifidy.jpg",
+        "authorDescribe": "<p>一个喜欢写很多东西的野生程序员，最近在努力写更好的代码与技术博客。</p> "
+      }
     },
     {
       "issue_content_item": "issue-21-3",
-      "issue_item_title": "iOS 上的相机捕捉"
+      "issue_item_title": "iOS 上的相机捕捉",
+      "issue_date": "2015/02/20",
+      "authorInfo": {
+        "authorLink": "http://nathanwhy.github.io/",
+        "authorName": "nathanwhy",
+        "authorAvatar": "../static/nathanwhy.jpg",
+        "authorDescribe": "<p>iOS 开发者，兴趣广泛，正不断尝试新的挑战。</p> "
+      }
     },
     {
       "issue_content_item": "issue-21-4",
-      "issue_item_title": "照片框架"
+      "issue_item_title": "照片框架",
+      "issue_date": "2015/03/03",
+      "authorInfo": {
+        "authorLink": "https://www.zybuluo.com/MicroCai/note/51120",
+        "authorName": "MicroCai",
+        "authorAvatar": "../static/crazyzombie.jpg",
+        "authorDescribe": "<p>会修电脑的单身狗，努力学习 iOS</p> "
+      }
     },
     {
       "issue_content_item": "issue-21-5",
-      "issue_item_title": "照片扩展"
+      "issue_item_title": "照片扩展",
+      "issue_date": "2015/03/02",
+      "authorInfo": {
+        "authorLink": "http://diwu.me",
+        "authorName": "吴迪",
+        "authorAvatar": "../static/wudi.jpg",
+        "authorDescribe": "<p>@唯木念，创业者，iOS 从业者， 会写一些 Nodejs。</p> "
+      }
     },
     {
       "issue_content_item": "issue-21-6",
-      "issue_item_title": "Core Image 介绍"
+      "issue_item_title": "Core Image 介绍",
+      "issue_date": "2015/02/13",
+      "authorInfo": {
+        "authorLink": "http://www.aprilme.com",
+        "authorName": "April",
+        "authorAvatar": "../static/april.jpg",
+        "authorDescribe": " <p>做 iOS / Mac / Web 开发的大白羊小妹儿~</p> "
+      }
     },
     {
       "issue_content_item": "issue-21-7",
-      "issue_item_title": "GPU 加速下的图像处理"
+      "issue_item_title": "GPU 加速下的图像处理",
+      "issue_date": "2015/03/05",
+      "authorInfo": {
+        "authorLink": "https://github.com/nangege",
+        "authorName": "nangege",
+        "authorAvatar": "../static/nangege.jpg",
+        "authorDescribe": "<p>现在是程序员，希望以后成为会写代码的设计师。喜欢简单的东西。</p> "
+      }
     },
     {
       "issue_content_item": "issue-21-8",
-      "issue_item_title": "GPU 加速下的图像视觉"
+      "issue_item_title": "GPU 加速下的图像视觉",
+      "issue_date": "2015/03/02",
+      "authorInfo": {
+        "authorLink": "http://blog.fengweizhou.com/",
+        "authorName": "dopcn",
+        "authorAvatar": "../static/dopcn.jpg",
+        "authorDescribe": "<p>@dopcn 做不任性的程序员</p> "
+      }
     },
     {
       "issue_content_item": "issue-21-9",
-      "issue_item_title": "基于 OpenCV 的人脸识别"
+      "issue_item_title": "基于 OpenCV 的人脸识别",
+      "issue_date": "2015/02/17",
+      "authorInfo": {
+        "authorLink": "http://www.phenmod.com",
+        "authorName": "朱兴灿",
+        "authorAvatar": "../static/phenmod.jpg",
+        "authorDescribe": "<p>@phenmod，新奇有趣事务爱好者，心中常念“坐忘”，的中二青年。</p> "
+      }
     }
     ]
   },
@@ -645,27 +1583,69 @@
     "issue_header_meta": "#22 - 2015 年 3 月",
     "issue_content_list": [{
       "issue_content_item": "issue-22-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": "2015/03/25",
+      "authorInfo": {
+        "authorLink": "http://weibo.com/poisondu",
+        "authorName": "Programmer毒",
+        "authorAvatar": "../static/poisondu.jpg",
+        "authorDescribe": "<p>iOS 开发，兴趣爱好太广泛</p> "
+      }
     },
     {
       "issue_content_item": "issue-22-1",
-      "issue_item_title": "Omni 内部"
+      "issue_item_title": "Omni 内部",
+      "issue_date": "2015/03/24",
+      "authorInfo": {
+        "authorLink": "http://bifidy.net",
+        "authorName": "bifidy",
+        "authorAvatar": "../static/bifidy.jpg",
+        "authorDescribe": "<p>一个喜欢写很多东西的野生程序员，最近在努力写更好的代码与技术博客。</p> "
+      }
     },
     {
       "issue_content_item": "issue-22-2",
-      "issue_item_title": "Artsy"
+      "issue_item_title": "Artsy",
+      "issue_date": "2015/03/25",
+      "authorInfo": {
+        "authorLink": "http://wongzigii.com",
+        "authorName": "Wongzigii",
+        "authorAvatar": "../static/Wongzigii.jpg",
+        "authorDescribe": "<p>iOS &amp; Mac Developer</p> "
+      }
     },
     {
       "issue_content_item": "issue-22-3",
-      "issue_item_title": "Square Register 的扩张"
+      "issue_item_title": "Square Register 的扩张",
+      "issue_date": "2015/03/17",
+      "authorInfo": {
+        "authorLink": "http://www.aprilme.com",
+        "authorName": "April",
+        "authorAvatar": "../static/april.jpg",
+        "authorDescribe": " <p>做 iOS / Mac / Web 开发的大白羊小妹儿~</p> "
+      }
     },
     {
       "issue_content_item": "issue-22-4",
-      "issue_item_title": "代码审查的艺术：Dropbox 的故事"
+      "issue_item_title": "代码审查的艺术：Dropbox 的故事",
+      "issue_date": "2015/03/24",
+      "authorInfo": {
+        "authorLink": "http://morisunshine.com",
+        "authorName": "黄宣冬",
+        "authorAvatar": "../static/huangxuanhua.jpg",
+        "authorDescribe": "<p>从事 iOS 应用开发的程序猿一枚，江湖自称治愈系萌汉子，优美代码追求者，正在人生漫漫路中缓缓前行。</p> "
+      }
     },
     {
       "issue_content_item": "issue-22-5",
-      "issue_item_title": "响应式视图"
+      "issue_item_title": "响应式视图",
+      "issue_date": "2015/03/25",
+      "authorInfo": {
+        "authorLink": "http://scoooter.io",
+        "authorName": "李子轩",
+        "authorAvatar": "../static/lizixuan.jpg",
+        "authorDescribe": "<p>李子轩 - iOS/Rails工程师 - 创始人@scoooter.io - Purdue</p> "
+      }
     }
     ]
   },
@@ -674,19 +1654,47 @@
     "issue_header_meta": "#23 - 2015 年 4 月",
     "issue_content_list": [{
       "issue_content_item": "issue-23-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": "2015/04/22",
+      "authorInfo": {
+        "authorLink": "http://bifidy.net",
+        "authorName": "bifidy",
+        "authorAvatar": "../static/bifidy.jpg",
+        "authorDescribe": "<p>一个喜欢写很多东西的野生程序员，最近在努力写更好的代码与技术博客。</p> "
+      }
     },
     {
       "issue_content_item": "issue-23-1",
-      "issue_item_title": "在 iOS 上捕获视频"
+      "issue_item_title": "在 iOS 上捕获视频",
+      "issue_date": "2015/04/22",
+      "authorInfo": {
+        "authorLink": "http://nathanwhy.github.io/",
+        "authorName": "nathanwhy",
+        "authorAvatar": "../static/nathanwhy.jpg",
+        "authorDescribe": "<p>iOS 开发者，兴趣广泛，正不断尝试新的挑战。</p> "
+      }
     },
     {
       "issue_content_item": "issue-23-2",
-      "issue_item_title": "Core Image 和视频"
+      "issue_item_title": "Core Image 和视频",
+      "issue_date": "2015/04/16",
+      "authorInfo": {
+        "authorLink": "http://pupboss.com",
+        "authorName": "高考这件小事",
+        "authorAvatar": "../static/pupboss.jpg",
+        "authorDescribe": "<p>爱 Coding，爱旅行，爱摄影。iOS, Python, WP &amp; Web Developer</p> "
+      }
     },
     {
       "issue_content_item": "issue-23-3",
-      "issue_item_title": "视频工具箱和硬件加速"
+      "issue_item_title": "视频工具箱和硬件加速",
+      "issue_date": "2015/04/20",
+      "authorInfo": {
+        "authorLink": "http://pupboss.com",
+        "authorName": "高考这件小事",
+        "authorAvatar": "../static/pupboss.jpg",
+        "authorDescribe": "<p>爱 Coding，爱旅行，爱摄影。iOS, Python, WP &amp; Web Developer</p> "
+      }
     }
     ]
   },
@@ -699,19 +1707,47 @@
     },
     {
       "issue_content_item": "issue-24-1",
-      "issue_item_title": "音频处理的狗屋"
+      "issue_item_title": "音频处理的狗屋",
+      "issue_date": "2015/05/19",
+      "authorInfo": {
+        "authorLink": "http://www.aprilme.com",
+        "authorName": "April",
+        "authorAvatar": "../static/april.jpg",
+        "authorDescribe": " <p>做 iOS / Mac / Web 开发的大白羊小妹儿~</p> "
+      }
     },
     {
       "issue_content_item": "issue-24-2",
-      "issue_item_title": "使用 Swift 进行函数式信号处理"
+      "issue_item_title": "使用 Swift 进行函数式信号处理",
+      "issue_date": "2015/05/21",
+      "authorInfo": {
+        "authorLink": "http://scoooter.io",
+        "authorName": "李子轩",
+        "authorAvatar": "../static/lizixuan.jpg",
+        "authorDescribe": "<p>李子轩 - iOS/Rails工程师 - 创始人@scoooter.io - Purdue</p> "
+      }
     },
     {
       "issue_content_item": "issue-24-3",
-      "issue_item_title": "播放，失败，迭代：面向产品的音效设计"
+      "issue_item_title": "播放，失败，迭代：面向产品的音效设计",
+      "issue_date": "2015/05/20",
+      "authorInfo": {
+        "authorLink": "http://bifidy.net",
+        "authorName": "bifidy",
+        "authorAvatar": "../static/bifidy.jpg",
+        "authorDescribe": "<p>一个喜欢写很多东西的野生程序员，最近在努力写更好的代码与技术博客。</p> "
+      }
     },
     {
       "issue_content_item": "issue-24-4",
-      "issue_item_title": "音频 API 一览"
+      "issue_item_title": "音频 API 一览",
+      "issue_date": "2015/05/13",
+      "authorInfo": {
+        "authorLink": "http://draveness.me/",
+        "authorName": "Draveness",
+        "authorAvatar": "../static/Draveness.jpg",
+        "authorDescribe": "<p>一直都在填坑</p> "
+      }
     }
     ]
   }
