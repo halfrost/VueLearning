@@ -45,6 +45,12 @@
 import VueMarkdown from 'vue-markdown'
 import axios from 'axios'
 
+// const md = new VueMarkdown({
+//   html: true,
+//   linkify: true,
+//   typographer: true
+// })
+
 export default {
   data() {
     return {
@@ -68,20 +74,30 @@ export default {
       }
     }
   },
+  methods: {
+    fetchData() {
+      axios.post('/api/getIssuesListInfo')
+        .then((response) => {
+          var array = this.$route.params['issuesNum'].split('-')
+          this.chapter = array[1]
+          this.section = array[2]
+          console.log('@@@@@@@@@', this.chapter, this.section)
+          this.issuesListInfo = response.data
+          this.issuesDetail = this.issuesListInfo[this.chapter - 1].issue_content_list[this.section]
+          console.log('****', this.issuesDetail)
+        })
+        .catch((error) => {
+          console.log('issuesDetail 页面出错了', error)
+        })
+    }
+  },
   created() {
-    axios.post('/api/getIssuesListInfo')
-      .then((response) => {
-        var array = this.$route.params['issuesNum'].split('-')
-        this.chapter = array[1]
-        this.section = array[2]
-        console.log('@@@@@@@@@', this.chapter, this.section)
-        this.issuesListInfo = response.data
-        this.issuesDetail = this.issuesListInfo[this.chapter - 1].issue_content_list[this.section]
-        console.log('****', this.issuesDetail)
-      })
-      .catch((error) => {
-        console.log('issuesDetail 页面出错了', error)
-      })
+    this.fetchData()
+  },
+  watch: {
+    $route() {
+      this.fetchData()
+    }
   }
 }
 </script>
