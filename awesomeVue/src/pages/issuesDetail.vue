@@ -75,6 +75,9 @@ export default {
     }
   },
   methods: {
+    reloadData() {
+      this.issuesDetail = this.issuesListInfo[this.chapter - 1].issue_content_list[this.section]
+    },
     fetchData() {
       axios.post('/api/getIssuesListInfo')
         .then((response) => {
@@ -96,7 +99,10 @@ export default {
   },
   watch: {
     $route() {
-      this.fetchData()
+      var array = this.$route.params['issuesNum'].split('-')
+      this.chapter = array[1]
+      this.section = array[2]
+      this.reloadData()
     }
   }
 }
