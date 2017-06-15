@@ -16,8 +16,8 @@
       </div>
     </div>
     <hr>
-    <div class="article-content">
-      这里是markdown里面的内容。
+    <div class="article-content" v-hljs>
+      <vue-markdown :source=this.articleContent></vue-markdown>
     </div>
     <div class="article-author-detail">
       <div class="article-author">
@@ -44,12 +44,9 @@
 <script>
 import VueMarkdown from 'vue-markdown'
 import axios from 'axios'
+import hljs from 'highlight.js'
 
-// const md = new VueMarkdown({
-//   html: true,
-//   linkify: true,
-//   typographer: true
-// })
+hljs.initHighlightingOnLoad()
 
 export default {
   data() {
@@ -58,7 +55,8 @@ export default {
       issuesListInfo: [],
       issuesDetail: {},
       chapter: 0,
-      section: 0
+      section: 0,
+      articleContent: ''
     }
   },
   props: [],
@@ -84,6 +82,7 @@ export default {
           var array = this.$route.params['issuesNum'].split('-')
           this.chapter = array[1]
           this.section = array[2]
+          this.getArticleContentURL()
           console.log('@@@@@@@@@', this.chapter, this.section)
           this.issuesListInfo = response.data
           this.issuesDetail = this.issuesListInfo[this.chapter - 1].issue_content_list[this.section]
@@ -92,17 +91,43 @@ export default {
         .catch((error) => {
           console.log('issuesDetail 页面出错了', error)
         })
+    },
+    fetchArticleContent() {
+      console.log(this.getArticleContentURL())
+
+      axios.get(this.getArticleContentURL())
+        .then((response) => {
+          console.log('yyyyyyyyyyyyy', response)
+          this.articleContent = response.data
+          // item.raw = response.data
+          // item.content = md.render(item.raw)
+          // this.item = item
+        })
+        .catch((error) => {
+          console.log('issuesDetail 请求md出错了', error)
+        })
+    },
+    getArticleContentURL() {
+      let array = this.$route.params['issuesNum'].split('-')
+      let chapterIndex = array[1]
+      return 'https://raw.githubusercontent.com/halfrost/articles/master/publish/issue' + chapterIndex + '/' + this.$route.params['issuesNum'] + '.md'
     }
   },
   created() {
+    // created 里面只执行一次，所以这里负责拉去所有文章基本信息
     this.fetchData()
+    this.fetchArticleContent()
   },
   watch: {
     $route() {
-      var array = this.$route.params['issuesNum'].split('-')
-      this.chapter = array[1]
-      this.section = array[2]
-      this.reloadData()
+      if (typeof (this.$route.params['issuesNum']) === 'string') {
+        var array = this.$route.params['issuesNum'].split('-')
+        this.chapter = array[1]
+        this.section = array[2]
+        this.reloadData()
+        // 由于每篇文章的详细信息都需要重新拉取，所以每次这里都要请求一次
+        this.fetchArticleContent()
+      }
     }
   }
 }

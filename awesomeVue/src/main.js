@@ -6,13 +6,22 @@ import 'element-ui/lib/theme-default/index.css'
 import router from './router'
 import Layout from './components/layout'
 import * as uiv from 'uiv'
+import hljs from 'highlight.js'
 // import BootstrapVue from 'bootstrap-vue'
 
 // Vue.use(BootstrapVue)
 Vue.use(uiv)
 Vue.use(ElementUI)
+Vue.use(hljs)
 
 Vue.config.productionTip = false
+
+hljs.initHighlightingOnLoad()
+
+Vue.directive('hljs', el => {
+  let blocks = el.querySelectorAll('pre code')
+  Array.prototype.forEach.call(blocks, hljs.highlightBlock)
+})
 
 /* eslint-disable no-new */
 new Vue({

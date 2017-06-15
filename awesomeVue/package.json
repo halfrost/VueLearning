@@ -16,6 +16,7 @@
     "bootstrap-vue": "^0.15.0",
     "element-ui": "^1.2.9",
     "express": "^4.15.3",
+    "highlight.js": "^9.12.0",
     "uiv": "^0.11.4",
     "vue": "^2.2.2",
     "vue-markdown": "^2.1.3",
