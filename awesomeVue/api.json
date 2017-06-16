@@ -1703,7 +1703,14 @@
     "issue_header_meta": "#24 - 2015 年 5 月",
     "issue_content_list": [{
       "issue_content_item": "issue-24-0",
-      "issue_item_title": "卷首语"
+      "issue_item_title": "卷首语",
+      "issue_date": " ",
+      "authorInfo": {
+        "authorLink": " ",
+        "authorName": " ",
+        "authorAvatar": " ",
+        "authorDescribe": ""
+      }
     },
     {
       "issue_content_item": "issue-24-1",

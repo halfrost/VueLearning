@@ -53,7 +53,17 @@ export default {
     return {
       authorInfo: {},
       issuesListInfo: [],
-      issuesDetail: {},
+      issuesDetail: {
+        issue_content_item: '',
+        issue_item_title: '',
+        issue_date: '',
+        authorInfo: {
+          authorLink: '',
+          authorName: '',
+          authorAvatar: '',
+          authorDescribe: ''
+        }
+      },
       chapter: 0,
       section: 0,
       articleContent: ''
@@ -85,8 +95,11 @@ export default {
           this.getArticleContentURL()
           console.log('@@@@@@@@@', this.chapter, this.section)
           this.issuesListInfo = response.data
-          this.issuesDetail = this.issuesListInfo[this.chapter - 1].issue_content_list[this.section]
-          console.log('****', this.issuesDetail)
+
+          if (this.chapter <= this.issuesListInfo.length && this.section < this.issuesListInfo[this.chapter - 1].issue_content_list.length) {
+            this.issuesDetail = this.issuesListInfo[this.chapter - 1].issue_content_list[this.section]
+            console.log('****', this.issuesDetail)
+          }
         })
         .catch((error) => {
           console.log('issuesDetail 页面出错了', error)
@@ -104,6 +117,10 @@ export default {
           // this.item = item
         })
         .catch((error) => {
+          this.articleContent = ''
+          this.issuesDetail.issue_date = ''
+          this.authorInfo.authorName = ''
+          this.articleContent = '这篇文章不见了'
           console.log('issuesDetail 请求md出错了', error)
         })
     },
