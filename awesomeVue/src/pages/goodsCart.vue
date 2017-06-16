@@ -13,22 +13,17 @@
           <div class="store-product-detail core-clearfix ">
             <div class="store-product-detail-image">
               <img src="//dxezhqhj7t42i.cloudfront.net/image/f8efab08-3db4-4707-bf47-efce1f744559 " height="394 " width="300 " alt=" " class
-            ="img-border"></img>
+            ="img-border "></img>
             </div>
-
-
             <h2 class="store-product-detail-title">Swifter - Swift 必备 tips (第三版)</h2>
-
-
             <h3 class="store-product-detail-pricing "><span  class='store-product-price'><span  class='store-value-money store-value-money-single'>&#65509;49.00</span></span></h3>
-
-
             <div class="store-product-detail-description ">
               <div class="store-product-detail-description-short ">Swift 是 Apple 于 WWDC 2014 提出的一门全新的开发语言。这门语言从其他很多语言中继承和学习了不少优点，语法非常优美，并且具有轻便灵活等特点，一经推出就备受瞩目。活跃在 iOS 开发一线的作者 王巍(onevcat) 参加了 WWDC 14 开发者大会，亲历了这门语言的诞生，并在第一时间进行了大量的学习和研究。在本书中作者通过总结和分享了 Swift 中 100 条十分实用的小技巧和需要特别注意的地方，希望能让大家更好更快地掌握 Swift。
               </div>
             </div>
-            <el-input-number v-model="book1" @change="handleChange" :min=0 style="bottom: 20px; right: 10px; position: absolute;"> </el-input-number>
+            <el-input-number v-model="book1" @change="handleChange" :min=0 style="bottom: 15px; right: 10px; position: absolute;"> </el-input-number>
           </div>
+
 
           <div class="core-section core-clearfix store-section-offer-program core-js-enabled-block ">
             <h2 class="core-section-header ">另推荐购买</h2>
@@ -36,7 +31,7 @@
               <div class="store-product-list store-product-list-offer ">
                 <div class="store-product-detail store-product-list-offer-item ">
                   <div class="store-product-detail-image">
-                    <img src="//dxezhqhj7t42i.cloudfront.net/image/266b3bbf-36e0-4cd2-807e-aeaf7bcf414f " height="400 " width="300 " alt=" " class ="img-border"></img>
+                    <img src="//dxezhqhj7t42i.cloudfront.net/image/266b3bbf-36e0-4cd2-807e-aeaf7bcf414f " height="400 " width="300 " alt=" " class ="img-border list-item-image"></img>
                   </div>
                   <h2 class="store-product-detail-title ">函数式 Swift</h2>
                   <h3 class="store-product-detail-pricing "><span  class='store-product-price'><span  class='store-value-money store-value-money-single'>&#65509;69.00</span></span></h3>
@@ -54,7 +49,7 @@
                 </div>
                 <div class="store-product-detail store-product-list-offer-item ">
                   <div class="store-product-detail-image ">
-                    <img src="//dxezhqhj7t42i.cloudfront.net/image/a165f416-1d8e-4ff4-a067-f00751aaac22 " height="400 " width="300 " alt=" " class ="img-border"></img>
+                    <img src="//dxezhqhj7t42i.cloudfront.net/image/a165f416-1d8e-4ff4-a067-f00751aaac22 " height="400 " width="300 " alt=" " class ="img-border list-item-image"></img>
                   </div>
                   <h2 class="store-product-detail-title ">Swift 进阶</h2>
                   <h3 class="store-product-detail-pricing "><span  class='store-product-price'><span  class='store-value-money store-value-money-single'>&#65509;69.00</span></span></h3>
@@ -72,7 +67,7 @@
                 <div class="store-product-detail store-product-list-offer-item-last ">
                   <div class="store-product-detail-image ">
                     <img src="//dxezhqhj7t42i.cloudfront.net/image/7a3e21cc-96fd-41ec-b226-bc00be79614d" height="400 " width="300 " alt=" " class
-                  ="img-border"></img>
+                  ="img-border list-item-image"></img>
                   </div>
                   <h2 class="store-product-detail-title ">Core Data</h2>
                   <h3 class="store-product-detail-pricing "><span  class='store-product-price'><span  class='store-value-money store-value-money-single'>&#65509;69.00</span></span></h3>
@@ -116,7 +111,7 @@ export default {
     },
     next() {
       this.$confirm('😘请去Objc官网支持❤️喵神(@onevcat)❤️', '无法购买', {
-        confirmButtonText: '现在就去',
+        confirmButtonText: '支持',
         cancelButtonText: '取消',
         type: 'info'
       }).then(() => {
@@ -158,6 +153,13 @@ export default {
 
 .store-product-detail-title {
   display: inline;
+}
+
+@media(max-width:768px) {
+  .list-item-image {
+    max-width: 100px;
+    height: auto;
+  }
 }
 
 .store-product-detail-title {
@@ -226,6 +228,7 @@ h3 {
 .store-product-detail {
   position: relative;
   line-height: 1.4em;
+  padding-bottom: 60px;
 }
 
 .store-product-detail {
@@ -269,7 +272,7 @@ h3 {
 .store-product-list-offer-item {
   position: relative;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   border-bottom: 1px solid #dadada;
 }
 
