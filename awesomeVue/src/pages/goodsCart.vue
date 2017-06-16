@@ -110,7 +110,7 @@ export default {
       console.log(value)
     },
     next() {
-      this.$confirm('😘请去Objc官网支持❤️喵神(@onevcat)❤️', '无法购买', {
+      this.$confirm('😘 请去Objc官网支持 ❤️ 喵神(@onevcat) ❤️', '无法购买', {
         confirmButtonText: '支持',
         cancelButtonText: '取消',
         type: 'info'
