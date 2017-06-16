@@ -1,5 +1,6 @@
 <template>
 <div class="home-page container">
+  <main>
   <div class="page-header">
     <h1 class='text-center'>ObjC 中国</h1>
   </div>
@@ -37,6 +38,7 @@
       <p>我们爱这个世界，愿程序让这个世界变得更美好！</p>
     </blockquote>
   </div>
+</main>
 </div>
 </template>
 

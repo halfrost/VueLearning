@@ -98,10 +98,10 @@
 export default {
   data() {
     return {
-      book1: 1,
-      book2: 1,
-      book3: 1,
-      book4: 1,
+      book1: 0,
+      book2: 0,
+      book3: 0,
+      book4: 0,
       disable: true
     }
   },
