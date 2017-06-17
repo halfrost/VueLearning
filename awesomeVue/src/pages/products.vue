@@ -11,11 +11,13 @@
 <script>
 import productsDetailInfo from './productsDetailInfo'
 import productsHome from './productsHome'
+import productsPreview from './productsPreview'
 
 export default {
   components: {
     productsDetailInfo,
-    productsHome
+    productsHome,
+    productsPreview
   },
   created() {
   },

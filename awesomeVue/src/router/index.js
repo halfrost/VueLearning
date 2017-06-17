@@ -8,6 +8,7 @@ import ProductsHome from '@/pages/productsHome'
 import GoodsCart from '@/pages/goodsCart'
 import Login from '@/pages/login'
 import ProductsDetailInfo from '@/pages/productsDetailInfo'
+import ProductsPreview from '@/pages/productsPreview'
 Vue.use(Router)
 
 export default new Router({
@@ -50,6 +51,22 @@ export default new Router({
     {
       path: 'advanced-swift',
       component: ProductsDetailInfo
+    },
+    {
+      path: 'swifter-tips/preview',
+      component: ProductsPreview
+    },
+    {
+      path: 'functional-swift/preview',
+      component: ProductsPreview
+    },
+    {
+      path: 'core-data/preview',
+      component: ProductsPreview
+    },
+    {
+      path: 'advanced-swift/preview',
+      component: ProductsPreview
     }
     ]
   },
