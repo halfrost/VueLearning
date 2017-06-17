@@ -57,6 +57,7 @@ export default {
       }
     },
     next() {
+      this.$store.commit('userLogin', {email: this.email, isLogin: true})
       router.push('/')
     }
   },

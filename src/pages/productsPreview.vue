@@ -17,7 +17,7 @@
           <div class="product-article-author">{{this.previewHeaderInfo[this.resolve(this.$route.path)].translatorList}}</div>
         </div>
         <div class="buy-button-group row">
-          <a class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4 btn btn-success btn-lg" href="https://sites.fastspring.com/onevcat/instant/functional-swift" target="_blank"><span class="glyphicon glyphicon-ok"></span> {{ '购买 ('+this.previewHeaderInfo[this.resolve(this.$route.path)].productPrice +')'}}</a>
+          <router-link class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4 btn btn-success btn-lg" to="/goodscart"><span class="glyphicon glyphicon-ok"></span> {{ '购买 ('+this.previewHeaderInfo[this.resolve(this.$route.path)].productPrice +')'}}</router-link>
         </div>
       </div>
 
@@ -25,7 +25,7 @@
       </div>
 
       <div class="buy-button-group row">
-        <a class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4 btn btn-success btn-lg" href="https://sites.fastspring.com/onevcat/instant/functional-swift" target="_blank"><span class="glyphicon glyphicon-ok"></span> {{ '购买 ('+this.previewHeaderInfo[this.resolve(this.$route.path)].productPrice +')'}}</a>
+        <router-link class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4 btn btn-success btn-lg" to="/goodscart"><span class="glyphicon glyphicon-ok"></span> {{ '购买 ('+this.previewHeaderInfo[this.resolve(this.$route.path)].productPrice +')'}}</router-link>
       </div>
     </div>
   </main>

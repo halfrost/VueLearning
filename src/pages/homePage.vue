@@ -1,7 +1,9 @@
 <template>
 <div class="home-page container">
   <main>
-    <div class="alert alert-warning" role="alert">您已经从本站注销，期待您的再次访问，感谢使用！</div>
+    <transition name=el-zoom-in-top>
+    <div class="alert alert-warning" role="alert" v-show="(this.$store.state.user.email!== undefined) && (!this.$store.state.user.isLogin)">您已经从本站注销，期待您的再次访问，感谢使用！</div>
+   </transition>
   <div class="page-header">
     <h1 class='text-center'>ObjC 中国</h1>
   </div>
@@ -44,7 +46,9 @@
 </template>
 
 <script>
+export default {
 
+}
 </script>
 
 <style scoped>

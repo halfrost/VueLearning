@@ -2,7 +2,8 @@
 <div class="book-content">
   <div id="__wrapper">
     <main class="container">
-      <p class="dim text-center page-header">已经购买，需要重新下载？点击<router-link to="/login/">登录</router-link></p>
+      <p class="dim text-center page-header" v-show="!this.$store.state.user.isLogin">已经购买，需要重新下载？点击<router-link to="/login/">登录</router-link></p>
+      <p class="dim text-center page-header" v-show="this.$store.state.user.isLogin">欢迎您 {{ this.$store.state.user.email}}，您可以下载已购内容或进行新的购买</p>
       <div class="row" >
           <book-card v-for="item in bookInfo" :key="item.id" :book-cover-image=item.bookCoverImage :book-price="item.bookPrice" :book-detail-info=item.bookDetailInfo></book-card>
       </div>

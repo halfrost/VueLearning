@@ -23,15 +23,28 @@
             <router-link to="/products">书籍</router-link>
           </li>
           <li>
-            <router-link to="/goodscart">购物车</router-link>
+            <router-link to="/goodscart" v-show="this.$store.state.user.isLogin">购物车</router-link>
           </li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
           <li><a class="iconstyle" style="padding-bottom:10px;color: #777; background-color: transparent;"><iframe frameborder="0" height="20px" scrolling="0" src="https://ghbtns.com/github-btn.html?user=halfrost&amp;repo=Halfrost-Field&amp;type=star&amp;count=true&amp;" width="100px"></iframe></a></li>
-          <li>
-            <router-link to="/login"><span class="glyphicon glyphicon-log-in"></span> 登录</router-link>
-          </li>
+
+          <transition name=fade>
+            <li>
+              <router-link to="" v-show="this.$store.state.user.isLogin" style="padding-bottom:10px;color: #777; background-color: transparent;">{{this.$store.state.user.email}}</router-link>
+            </li>
+          </transition>
+
+          <transition name=fade>
+            <li><a @click="logout" v-show="this.$store.state.user.isLogin">注销 <span class="glyphicon glyphicon-log-out"></span></a></li>
+          </transition>
+
+          <transition name=fade>
+            <li>
+              <router-link to="/login" v-show="!this.$store.state.user.isLogin"><span class="glyphicon glyphicon-log-in"></span> 登录</router-link>
+            </li>
+          </transition>
         </ul>
       </collapse>
     </div>
@@ -40,12 +53,23 @@
 </template>
 
 <script>
+
 export default {
   props: [],
   data() {
     return {
       showNavbar: false
     }
+  },
+  methods: {
+    logout() {
+      this.$store.commit('userLogout')
+    },
+    getUserLoginState() {
+      return this.$store.state.user.isLogin
+    }
+  },
+  created() {
   }
 }
 </script>

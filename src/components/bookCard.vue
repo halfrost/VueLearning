@@ -11,7 +11,7 @@
 
         <span class="input-group-btn">
                  <!--router-link 里面加入 target="_blank" 可以从新的选项卡打开一个新界面-->
-                <router-link to="/goodscart" class="btn btn-success">购买</router-link>
+                <a class="btn btn-success" @click="goGoodsCart">购买</a>
                 <!-- <button class="dropdown btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">
                     下载
                     <span class="caret"></span>
@@ -32,12 +32,19 @@
 </template>
 
 <script>
+import router from '@/router'
+
 export default {
   props: [
     'book-cover-image',
     'book-price',
     'book-detail-info'
-  ]
+  ],
+  methods: {
+    goGoodsCart() {
+      this.$store.state.user.isLogin ? router.push('/goodscart') : router.push('/login')
+    }
+  }
 }
 </script>
 
