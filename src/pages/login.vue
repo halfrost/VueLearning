@@ -1,30 +1,25 @@
 <template>
 <div>
-  <main class="container">
-
+  <main class="container" v-show="!inputHidden">
     <h1 class="page-header">登录</h1>
-
     <p>输入您的邮箱地址，用于登录的验证邮件将发送到您的邮箱。</p>
-
-    <form action="/login/sendtoken/" method="POST">
       <div class="row">
         <div class="form-group col-xs-9">
           <div class="input-group">
             <span class="input-group-addon">@</span>
-            <input type="email" placeholder="您的邮箱地址" name="user" class="form-control input-lg">
+            <input placeholder="您的邮箱地址" :class="{'input': true, 'is-danger': errors.has('email'),'input-lg': true,'form-control': true }" v-validate="'required|email'" type="text" name="email" v-model="email">
           </div>
         </div>
-        <button type="submit" value="Login" class="btn btn-primary btn-lg col-xs-2">登录</button>
+        <button type="submit" value="Login" @click="login" class="btn btn-primary btn-lg col-xs-2">登录</button>
       </div>
-    </form>
   </main>
 
 
-  <main class="container">
+  <main class="container" v-show="inputHidden">
     <h1 class="page-header">登录</h1>
-    <div class="alert alert-info" role="alert">正在使用<strong> ydz627@gmail.com </strong>进行登录，请确认并点击按钮登录。</div>
+    <div class="alert alert-info col-xs-12" role="alert">正在使用<strong> {{ this.email }} </strong>进行登录，请确认并点击按钮登录。</div>
     <div class="col-md-12 text-center">
-      <a class="btn btn-lg btn-primary" href="/login/do_login/?token=LQqVvDgTYyCKbYjY87qR4w&uid=ydz627@gmail.com">登录</a>
+      <button class="btn btn-lg btn-primary" @click="next">登录</button>
     </div>
   </main>
 
@@ -32,6 +27,42 @@
 </template>
 
 <script>
+import router from '@/router'
+
+export default {
+  data() {
+    return {
+      inputHidden: false,
+      email: ''
+    }
+  },
+  methods: {
+    login() {
+      if (this.email.length <= 0) {
+        this.$message({
+          showClose: true,
+          message: '请输入邮箱',
+          type: 'error'
+        })
+      } else {
+        if (this.$validator.errorBag.has('email') === false) {
+          this.inputHidden = true
+        } else {
+          this.$message({
+            showClose: true,
+            message: '请输入正确格式的邮箱地址',
+            type: 'error'
+          })
+        }
+      }
+    },
+    next() {
+      router.push('/')
+    }
+  },
+  computed: {
+  }
+}
 
 </script>
 

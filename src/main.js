@@ -7,12 +7,14 @@ import router from './router'
 import Layout from './components/layout'
 import * as uiv from 'uiv'
 import hljs from 'highlight.js'
+import VeeValidate from 'vee-validate'
 // import BootstrapVue from 'bootstrap-vue'
 
 // Vue.use(BootstrapVue)
 Vue.use(uiv)
 Vue.use(ElementUI)
 Vue.use(hljs)
+Vue.use(VeeValidate)
 
 Vue.config.productionTip = false
 
