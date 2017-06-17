@@ -2,7 +2,9 @@
 <div id="__wrapper">
   <div class="products-content">
     <keep-alive>
+      <transition name="slide-right">
       <router-view></router-view>
+    </transition>
     </keep-alive>
   </div>
 </div>

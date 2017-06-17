@@ -6,7 +6,9 @@
 
   <div class="app-content">
     <keep-alive>
+      <transition name="drop">
       <router-view></router-view>
+    </transition>
     </keep-alive>
   </div>
 
