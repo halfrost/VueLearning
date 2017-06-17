@@ -1,6 +1,7 @@
 <template>
 <div class="home-page container">
   <main>
+    <div class="alert alert-warning" role="alert">您已经从本站注销，期待您的再次访问，感谢使用！</div>
   <div class="page-header">
     <h1 class='text-center'>ObjC 中国</h1>
   </div>

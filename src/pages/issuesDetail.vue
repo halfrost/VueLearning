@@ -117,7 +117,6 @@ export default {
           // this.item = item
         })
         .catch((error) => {
-          this.articleContent = ''
           this.issuesDetail.issue_date = ''
           this.authorInfo.authorName = ''
           this.articleContent = '这篇文章不见了'

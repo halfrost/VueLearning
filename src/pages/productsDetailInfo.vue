@@ -5,8 +5,12 @@
     <products-header :product-title=selectDetailInfo.productTitle  :product-price=selectDetailInfo.productPrice  :author-list=selectDetailInfo.authorList   :translator-list=selectDetailInfo.translatorList>
     </products-header>
 
-    <products-download-tool>
-    </products-download-tool>
+    <!-- 暂时先隐藏下载的工具条 -->
+    <!-- <products-download-tool>
+    </products-download-tool> -->
+
+    <products-preview-tool :preview-url=this.resolve(this.$route.path)>
+    </products-preview-tool>
 
     <div class="product-description">
       <products-introduce :product-subtitle=selectDetailInfo.productSubtitle :product-text=selectDetailInfo.productText>
@@ -27,8 +31,13 @@
 
       <hr>
 
-      <products-download-tool>
-      </products-download-tool>
+      <!-- 暂时先隐藏下载的工具条 -->
+      <!-- <products-download-tool>
+      </products-download-tool> -->
+
+      <products-preview-tool :preview-url=this.resolve(this.$route.path)>
+      </products-preview-tool>
+
     </div>
   </div>
 
@@ -42,6 +51,7 @@ import ProductsIntroduce from '@/components/productsDetailInfo/productsIntroduce
 import ProductsContent from '@/components/productsDetailInfo/productsContent'
 import ProductsAuthor from '@/components/productsDetailInfo/productsAuthor'
 import ProductsProblem from '@/components/productsDetailInfo/productsProblem'
+import ProductsPreviewTool from '@/components/productsDetailInfo/productsPreviewTool'
 import axios from 'axios'
 
 export default {
@@ -49,7 +59,7 @@ export default {
     axios.post('/api/getProductsDetailInfoList')
       .then((response) => {
         this.productsDetailInfoList = response.data
-        this.selectDetailInfo = this.productsDetailInfoList[this.$route.path]
+        this.selectDetailInfo = this.productsDetailInfoList[this.resolve(this.$route.path)]
       })
       .catch((error) => {
         console.log('出错啦~', error)
@@ -58,21 +68,32 @@ export default {
   computed: {
     selectDetailInfo() {
       console.log(this.$route.path)
-      console.log('^^^^^^^^^^^^^', this.productsDetailInfoList[this.$route.path])
-      if (this.productsDetailInfoList[this.$route.path] === undefined) {
+
+      let url = this.resolve(this.$route.path)
+      if (this.productsDetailInfoList[url] === undefined) {
         return this.defaultDetailInfo
       } else {
-        return this.productsDetailInfoList[this.$route.path]
+        return this.productsDetailInfoList[url]
       }
     }
   },
   components: {
     ProductsHeader,
     ProductsDownloadTool,
+    ProductsPreviewTool,
     ProductsIntroduce,
     ProductsContent,
     ProductsAuthor,
     ProductsProblem
+  },
+  methods: {
+    resolve(url) {
+      if (url.substr(url.length - 1, 1) === '/') {
+        return url.substring(0, url.length - 1)
+      } else {
+        return url
+      }
+    }
   },
   data() {
     return {

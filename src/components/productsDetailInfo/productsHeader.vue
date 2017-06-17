@@ -42,7 +42,16 @@ export default {
   },
   computed: {
     productIcon() {
-      return this.imgMap[this.$route.path]
+      return this.imgMap[this.resolve(this.$route.path)]
+    }
+  },
+  methods: {
+    resolve(url) {
+      if (url.substr(url.length - 1, 1) === '/') {
+        return url.substring(0, url.length - 1)
+      } else {
+        return url
+      }
     }
   }
 }
