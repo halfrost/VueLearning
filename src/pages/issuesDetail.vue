@@ -87,7 +87,7 @@ export default {
       this.issuesDetail = this.issuesListInfo[this.chapter - 1].issue_content_list[this.section]
     },
     fetchData() {
-      axios.post('/api/getIssuesListInfo')
+      axios.post('http://localhost:8080/api/getIssuesListInfo')
         .then((response) => {
           var array = this.$route.params['issuesNum'].split('-')
           this.chapter = array[1]

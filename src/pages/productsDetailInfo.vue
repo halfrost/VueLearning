@@ -56,7 +56,7 @@ import axios from 'axios'
 
 export default {
   created() {
-    axios.post('/api/getProductsDetailInfoList')
+    axios.post('http://localhost:8080/api/getProductsDetailInfoList')
       .then((response) => {
         this.productsDetailInfoList = response.data
         this.selectDetailInfo = this.productsDetailInfoList[this.resolve(this.$route.path)]
