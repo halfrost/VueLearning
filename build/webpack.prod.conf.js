@@ -23,6 +23,7 @@ var webpackConfig = merge(baseWebpackConfig, {
   devtool: config.build.productionSourceMap ? '#source-map' : false,
   output: {
     path: config.build.assetsRoot,
+    // 下面这这句话一定要加，否则会影响 mac桌面端的路径问题，当然可以自己配置其他目录
     publicPath: isELECTRON ? path.join(__dirname, '../dist/') : '/',
     filename: utils.assetsPath('js/[name].[chunkhash].js'),
     chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')

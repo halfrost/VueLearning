@@ -1,14 +1,15 @@
 var path = require('path')
-var config = require('../config')
 var utils = require('./utils')
 var webpack = require('webpack')
+var config = require('../config')
 var merge = require('webpack-merge')
 var baseWebpackConfig = require('./webpack.base.conf')
-var ExtractTextPlugin = require('extract-text-webpack-plugin')
+var CopyWebpackPlugin = require('copy-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
-var env = process.env.NODE_ENV === 'testing'
-  ? require('../config/test.env')
-  : config.build.env
+var ExtractTextPlugin = require('extract-text-webpack-plugin')
+var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
+
+var env = config.build.env
 
 var isELECTRON = process.env.NODE_ELECTRON === 'true'
 
@@ -17,44 +18,46 @@ config.build.assetsRoot = path.resolve(__dirname, '../app/www')
 
 var webpackConfig = merge(baseWebpackConfig, {
   module: {
-    loaders: utils.styleLoaders({ sourceMap: config.build.productionSourceMap, extract: true })
-  },
-  devtool: config.build.productionSourceMap ? '#source-map' : false,
-  output: {
-    path: config.build.assetsRoot,
-    publicPath: isELECTRON ? path.join(__dirname, '../app/www/') : '',
-    filename: utils.assetsPath('js/[name].[chunkhash].js'),
-    chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
-  },
-  vue: {
-    loaders: utils.cssLoaders({
+    rules: utils.styleLoaders({
       sourceMap: config.build.productionSourceMap,
       extract: true
     })
   },
+  devtool: config.build.productionSourceMap ? '#source-map' : false,
+  output: {
+    path: config.build.assetsRoot,
+    // 下面这这句话一定要加，否则会影响 mac桌面端的路径问题，当然可以自己配置其他目录
+    publicPath: isELECTRON ? path.join(__dirname, '../app/www/') : '',
+    filename: utils.assetsPath('js/[name].[chunkhash].js'),
+    chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
+  },
   plugins: [
-    // http://vuejs.github.io/vue-loader/workflow/production.html
+    // http://vuejs.github.io/vue-loader/en/workflow/production.html
     new webpack.DefinePlugin({
       'process.env': env
-    }),
-    new webpack.ProvidePlugin({
-      'window._': 'lodash'
     }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false
+      },
+      sourceMap: true
+    }),
+    // extract css into its own file
+    new ExtractTextPlugin({
+      filename: utils.assetsPath('css/[name].[contenthash].css')
+    }),
+    // Compress extracted CSS. We are using this plugin so that possible
+    // duplicated CSS from different components can be deduped.
+    new OptimizeCSSPlugin({
+      cssProcessorOptions: {
+        safe: true
       }
     }),
-    new webpack.optimize.OccurenceOrderPlugin(),
-    // extract css into its own file
-    new ExtractTextPlugin(utils.assetsPath('css/[name].[contenthash].css')),
     // generate dist index.html with correct asset hash for caching.
     // you can customize output by editing /index.html
     // see https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
-      filename: process.env.NODE_ENV === 'testing'
-        ? 'index.html'
-        : config.build.index,
+      filename: config.build.index,
       template: 'index-app.html',
       inject: true,
       minify: {
@@ -86,7 +89,15 @@ var webpackConfig = merge(baseWebpackConfig, {
     new webpack.optimize.CommonsChunkPlugin({
       name: 'manifest',
       chunks: ['vendor']
-    })
+    }),
+    // copy custom static assets
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, '../static'),
+        to: config.build.assetsSubDirectory,
+        ignore: ['.*']
+      }
+    ])
   ]
 })
 
@@ -106,6 +117,11 @@ if (config.build.productionGzip) {
       minRatio: 0.8
     })
   )
+}
+
+if (config.build.bundleAnalyzerReport) {
+  var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+  webpackConfig.plugins.push(new BundleAnalyzerPlugin())
 }
 
 module.exports = webpackConfig

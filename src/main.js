@@ -9,6 +9,7 @@ import Layout from './components/layout'
 import * as uiv from 'uiv'
 import hljs from 'highlight.js'
 import VeeValidate from 'vee-validate'
+import cordova from './mobile-index'
 // import BootstrapVue from 'bootstrap-vue'
 
 // Vue.use(BootstrapVue)
@@ -26,14 +27,18 @@ Vue.directive('hljs', el => {
   Array.prototype.forEach.call(blocks, hljs.highlightBlock)
 })
 
-/* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  router,
-  store,
-  template: '<Layout/>',
-  components: {
-    Layout
-  }
-  //  render: h => h(App)
-})
+cordova.onDeviceReady = () => {
+  /* eslint-disable no-new */
+  new Vue({
+    el: '#app',
+    router,
+    store,
+    template: '<Layout/>',
+    components: {
+      Layout
+    }
+    //  render: h => h(App)
+  })
+}
+
+cordova.initialize()
