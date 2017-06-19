@@ -32,7 +32,7 @@ export default {
     footerView
   },
   created() {
-    this.$store.dispatch('loadUser')
+    // this.$store.dispatch('loadUser')
   },
   data() {
     return {
