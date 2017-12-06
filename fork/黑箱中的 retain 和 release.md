@@ -49,10 +49,10 @@ id objc_object::rootRetain() {
 
 这是简化后的 `rootRetain` 方法的实现，其中只有处理一般情况的代码：
 
-<<<<<<< HEAD
-```objectivec        uintptr_t carry;
+```objectivec    
+
+    uintptr_t carry;
         newisa.bits = addc(newisa.bits, RC_ONE, 0, &carry);
-=======
 ```objectivec
 id objc_object::rootRetain(bool tryRetain, bool handleOverflow) {
     isa_t oldisa;
@@ -71,7 +71,6 @@ id objc_object::rootRetain(bool tryRetain, bool handleOverflow) {
     do {
         oldisa = Loaisa.bits, RC_ONE, 0, &carry);
 
->>>>>>> fork_objc
     } while (!StoreExclusive(&isa.bits, oldisa.bits, newisa.bits));
 
     return (id)this;
