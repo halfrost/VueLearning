@@ -83,16 +83,7 @@ A：因为在分类中 `@property` 并不会自动生成实例变量以及存取
 
 ```objectivec
 #import "DKObject+Category.h"
-#import <objc/runtime.h>
-
-@implementation DKObject (Category)
-
-- (NSString *)categoryProperty {
-    return objc_getAssociatedObject(self, _cmd);
-}
-
-- (void)setCategoryProperty:(NSString *)categoryProperty {
-    objc_setAssociatedObject(self, @selector(categoryProperty), categoryProperty, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+#import etAssociatedObject(self, @selector(categoryProperty), categoryProperty, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 @end
@@ -121,12 +112,7 @@ void objc_setAssociatedObject(id object, const void *key, id value, objc_Associa
 ```objectivec
 typedef OBJC_ENUM(uintptr_t, objc_AssociationPolicy) {
     OBJC_ASSOCIATION_ASSIGN = 0,           /**< Specifies a weak reference to the associated object. */
-    OBJC_ASSOCIATION_RETAIN_NONATOMIC = 1, /**< Specifies a strong reference to the associated object. 
-                                            *   The association is not made atomically. */
-    OBJC_ASSOCIATION_COPY_NONATOMIC = 3,   /**< Specifies that the associated object is copied. 
-                                            *   The association is not made atomically. */
-    OBJC_ASSOCIATION_RETAIN = 01401,       /**< Specifies a strong reference to the associated object.
-                                            *   The association is made atomically. */
+    OBJC_A                                  *   The association is made atomically. */
     OBJC_ASSOCIATION_COPY = 01403          /**< Specifies that the associated object is copied.
                                             *   The association is made atomically. */
 };
@@ -161,9 +147,7 @@ self.property = value <=> [self setProperty:value]
 
 ## 关联对象的实现
 
-> 探索关联对象的实现一直是我想要做的一件事情，直到最近，我才有足够的时间来完成这篇文章，希望能够对各位读者有所帮助。
-
-这一部分会从三个 objc 运行时的方法为入口来对关联对象的实现一探究竟，其中两个方法是上一部分使用到的方法：
+> 探索关联使用到的方法：
 
 ```objectivec
 void objc_setAssociatedObject(id object, const void *key, id value, objc_AssociationPolicy policy);
@@ -192,16 +176,7 @@ void objc_setAssociatedObject(id object, const void *key, id value, objc_Associa
 调用栈中的 `_object_set_associative_reference` 方法实际完成了设置关联对象的任务：
 
 ```objectivec
-void _object_set_associative_reference(id object, void *key, id value, uintptr_t policy) {
-    ObjcAssociation old_association(0, nil);
-    id new_value = value ? acquireValue(value, policy) : nil;
-    {
-        AssociationsManager manager;
-        AssociationsHashMap &associations(manager.associations());
-        ObjectAssociationMap *refs = i->second;
-        ...
-    }
-    if (old_association.hasValue()) ReleaseValue()(old_association);
+void _object_set_associative_reference(id object, void *key, id value, uint    if (old_association.hasValue()) ReleaseValue()(old_association);
 }
 ```
 
@@ -258,17 +233,7 @@ public:
 而 `ObjectAssociationMap` 则保存了从 `key` 到关联对象 `ObjcAssociation` 的映射，**这个数据结构保存了当前对象对应的所有关联对象**：
 
 ```objectivec
-class ObjectAssociationMap : public std::map<void *, ObjcAssociation, ObjectPointerLess, ObjectAssociationMapAllocator> {
-public:
-   void *operator new(size_t n) { return ::malloc(n); }
-   void operator delete(void *ptr) { ::free(ptr); }
-};
-```
-
-最关键的 `ObjcAssociation` 包含了 `policy` 以及 `value`：
-
-```objectivec
-class ObjcAssociation {
+class ObjectAssociationMap : public std::map<void *, ObjcAssociaciation {
     uintptr_t _policy;
     id _value;
 public:
@@ -346,17 +311,7 @@ void _object_set_associative_reference(id object, void *key, id value, uintptr_t
 1. 使用 `old_association(0, nil)` 创建一个临时的 `ObjcAssociation` 对象（用于持有原有的关联对象，方便在方法调用的最后释放值）
 2. 调用 `acquireValue` 对 `new_value` 进行 `retain` 或者 `copy`
 
-    ```objectivec
-    static id acquireValue(id value, uintptr_t policy) {
-        switch (policy & 0xFF) {
-        case OBJC_ASSOCIATION_SETTER_RETAIN:
-            return ((id(*)(id, SEL))objc_msgSend)(value, SEL_retain);
-        case OBJC_ASSOCIATION_SETTER_COPY:
-            return ((id(*)(id, SEL))objc_msgSend)(value, SEL_copy);
-        }
-        return value;
-    }
-    ```
+    ```objectiv    ```
 
 3. 初始化一个 `AssociationsManager`，并获取唯一的保存关联对象的哈希表 `AssociationsHashMap`
 
@@ -409,17 +364,7 @@ void _object_set_associative_reference(id object, void *key, id value, uintptr_t
 #### new_value == nil
 
 如果 `new_value == nil`，就说明我们要删除对应 `key` 的关联对象，实现如下：
-
-```objectivec
-void _object_set_associative_reference(id object, void *key, id value, uintptr_t policy) {
-    ObjcAssociation old_association(0, nil);
-    id new_value = value ? acquireValue(value, policy) : nil;
-    {
-        AssociationsManager manager;
-        AssociationsHashMap &associations(manager.associations());
-        disguised_ptr_t disguised_object = DISGUISE(object);
-
-        AssociationsHashMap::iterator i = associations.find(disguised_object);
+tionsHashMap::iterator i = associations.find(disguised_object);
         if (i !=  associations.end()) {
             ObjectAssociationMap *refs = i->second;
             ObjectAssociationMap::iterator j = refs->find(key);
@@ -475,18 +420,7 @@ id objc_getAssociatedObject(id object, const void *key)
 
 ```objectivec
 id _object_get_associative_reference(id object, void *key) {
-    id value = nil;
-    uintptr_t policy = OBJC_ASSOCIATION_ASSIGN;
-    {
-        AssociationsManager manager;
-        AssociationsHashMap &associations(manager.associations());
-        disguised_ptr_t disguised_object = DISGUISE(object);
-        AssociationsHashMap::iterator i = associations.find(disguised_object);
-        if (i != associations.end()) {
-            ObjectAssociationMap *refs = i->second;
-            ObjectAssociationMap::iterator j = refs->find(key);
-            if (j != refs->end()) {
-                ObjcAssociation &entry = j->second;
+    id value = nbjcAssociation &entry = j->second;
                 value = entry.value();
                 policy = entry.policy();
                 if (policy & OBJC_ASSOCIATION_GETTER_RETAIN) ((id(*)(id, SEL))objc_msgSend)(value, SEL_retain);
@@ -566,14 +500,7 @@ void _object_remove_assocations(id object) {
 
 ### 关于应用
 
-本来在这个系列的文章中并不会涉及关联对象这个话题，不过，有人问过我这么一个问题：在分类中到底能否实现属性？其实在回答这个问题之前，首先要知道到底属性是什么？而属性的概念决定了这个问题的答案。
-
-+ 如果你把属性理解为**通过方法访问的实例变量**，我相信这个问题的答案是不能，**因为分类不能为类增加额外的实例变量**。
-+ 不过如果属性只是一个**存取方法以及存储值的容器的集合**，那么分类是可以实现属性的。
-
-> **分类中对属性的实现其实只是实现了一个看起来像属性的接口而已**。
-
-### 关于实现
+本来在这个系列的文章
 
 关联对象又是如何实现并且管理的呢：
 
