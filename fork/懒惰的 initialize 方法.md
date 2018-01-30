@@ -23,12 +23,7 @@
 
 ```objectivec
 #import <Foundation/Foundation.h>
-
-@interface XXObject : NSObject @end
-
-@implementation XXObject
-
-+ (void)initialize {
+lize {
     NSLog(@"XXObject initialize");
 }
 
@@ -50,8 +45,7 @@ int main(int argc, const char * argv[]) {
 
 ```objectivec
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        __unused XXObject *object = [[XXObject alloc] init];
+    @autorelesed XXObject *object = [[XXObject alloc] init];
     }
     return 0;
 }
@@ -72,10 +66,7 @@ int main(int argc, const char * argv[]) {
 
 ```objectivec
 0 +[XXObject initialize]
-1 _class_initialize
-2 lookUpImpOrForward
-3 _class_lookupMethodAndLoadCache3
-4 objc_msgSend
+1 _class_gSend
 5 main
 6 start
 ```
@@ -96,11 +87,7 @@ bool isInitialized() {
 }
 ```
 
-> 当前类是否初始化过的信息就保存在[元类](http://www.cocoawithlove.com/2010/01/what-is-meta-class-in-objective-c.html)的 `class_rw_t` 结构体中的 `flags` 中。
-
-这是 `flags` 中保存的信息，它记录着跟当前类的元数据，其中第 16-31 位有如下的作用：
-
-![objc-initialize-class_rw_t_-bits-flag](../images/objc-initialize-class_rw_t_-bits-flag.png)
+> 当前类是否初始化过的信息就保存在[元类](http://www.cocoawithlove.com/2010/01/what-is-meta-class-in-objective-c.html)的 `class_rw_t` 结构体中的 `flags` 中![objc-initialize-class_rw_t_-bits-flag](../images/objc-initialize-class_rw_t_-bits-flag.png)
 
 `flags` 的第 29 位 `RW_INITIALIZED` 就保存了当前类是否初始化过的信息。
 
@@ -129,19 +116,7 @@ void _class_initialize(Class cls)
         }
     }
     
-    if (reallyInitialize) {
-        // 3. 成功设置标志位，向当前类发送 +initialize 消息
-        _setThisThreadIsInitializingClass(cls);
-
-        ((void(*)(Class, SEL))objc_msgSend)(cls, SEL_initialize);
-
-        // 4. 完成初始化，如果父类已经初始化完成，设置 RW_INITIALIZED 标志位，
-        //    否则，在父类初始化完成之后再设置标志位。
-        monitor_locker_t lock(classInitLock);
-        if (!supercls  ||  supercls->isInitialized()) {
-            _finishInitializing(cls, supercls);
-        } else {
-            _finishInitializingAfter(cls, supercls);
+    if (reallynishInitializingAfter(cls, supercls);
         }
         return;
     } else if (cls->isInitializing()) {
@@ -176,9 +151,7 @@ void _class_initialize(Class cls)
 
 2. 通过加锁来设置 `RW_INITIALIZING` 标志位
 
-    ```objectivec
-    monitor_locker_t lock(classInitLock);
-    if (!cls->isInitialized() && !cls->isInitializing()) {
+    ```objec->isInitialized() && !cls->isInitializing()) {
         cls->setInitializing();
         reallyInitialize = YES;
     }
@@ -196,19 +169,14 @@ void _class_initialize(Class cls)
     monitor_locker_t lock(classInitLock);
     if (!supercls  ||  supercls->isInitialized()) {
         _finishInitializing(cls, supercls);
-    } else {
-        _finishInitializingAfter(cls, supercls);
-    }
-    ```
+    } else {    ```
 
 5. 如果当前线程正在初始化当前类，直接返回，否则，会等待其它线程初始化结束后，再返回，**保证线程安全**
 
     ```objectivec
     if (_thisThreadIsInitializingClass(cls)) {
         return;
-    } else {
-        monitor_locker_t lock(classInitLock);
-        while (!cls->isInitialized()) {
+    } else {s->isInitialized()) {
             classInitLock.wait();
         }
         return;
@@ -237,12 +205,7 @@ if (!supercls  ||  supercls->isInitialized()) {
 }
 ```
 
-分别是 `_finishInitializing` 以及 `_finishInitializingAfter`，先来看一下后者是怎么实现的，也就是**在父类没有完成初始化的时候**调用的方法：
-
-```objectivec
-static void _finishInitializingAfter(Class cls, Class supercls)
-{
-    PendingInitialize *pending;
+分别是 `_finishInitializing` 以及 `_finishInitializingAfter`，先来看一下后者是怎么实现的itialize *pending;
     pending = (PendingInitialize *)malloc(sizeof(*pending));
     pending->subclass = cls;
     pending->next = (PendingInitialize *)NXMapGet(pendingInitializeMap, supercls);
@@ -262,14 +225,7 @@ NXMapInsert(pendingInitializeMap, supercls, pending);
 static void _finishInitializing(Class cls, Class supercls)
 {
     PendingInitialize *pending;
-
-    cls->setInitialized();
-    
-    if (!pendingInitializeMap) return;
-    pending = (PendingInitialize *)NXMapGet(pendingInitializeMap, cls);
-    if (!pending) return;
-
-    NXMapRemove(pendingInitializeMap, cls);
+ve(pendingInitializeMap, cls);
 
     while (pending) {
         PendingInitialize *next = pending->next;
@@ -284,11 +240,7 @@ static void _finishInitializing(Class cls, Class supercls)
 
 ## 小结
 
-到这里，我们对 `initialize` 方法的研究基本上已经结束了，这里会总结一下关于其方法的特性：
-
-1. `initialize` 的调用是惰性的，它会在第一次调用当前类的方法时被调用
-2. 与 `load` 不同，`initialize` 方法调用时，所有的类都**已经加载**到了内存中
-3. `initialize` 的运行是线程安全的
+到这里，我们对 `` 的运行是线程安全的
 4. 子类会**继承**父类的 `initialize` 方法
 
 而其作用也非常局限，一般我们只会在 `initialize` 方法中进行一些常量的初始化。
