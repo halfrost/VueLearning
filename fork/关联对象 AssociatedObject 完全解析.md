@@ -42,11 +42,6 @@
 @implementation DKObject {
     NSString *_property;
 }
-
-- (NSString *)property {
-    return _property;
-}
-
 - (void)setProperty:(NSString *)property {
     _property = property;
 }
