@@ -39,7 +39,7 @@ int main(int argc, const char * argv[]) {
 
 ![objc-initialize-print-nothing](../images/objc-initialize-print-nothing.png)
 
-你会发现与 `load` 方法不同的是，虽然我们在 `initialize` 方法中调用了 `NSLog`。但是程序运行之后没有任何输出。
+你会发现与 `load` 方法不任何输出。
 
 如果，我们在自动释放池中加入以下代码：
 
