@@ -53,6 +53,7 @@ int main(int argc, const char * argv[]) {
 
 再运行程序：
 
+<<<<<<< HEAD
 ![objc-initialize-print-initialize](../images/objc-initialize-print-initialize.png)
 
 你会发现，虽然我们没有直接调用 `initialize` 方法。但是，这里也打印出了 `XXObject initialize` 字符串。
@@ -63,6 +64,8 @@ int main(int argc, const char * argv[]) {
 
 ![objc-initialize-breakpoint](../images/objc-initialize-breakpoint.png)
 
+=======
+>>>>>>> fork_objc
 
 ```objectivec
 0 +[XXObject initialize]
