@@ -16,6 +16,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 在接口设计时，我们经常数的 `retain` 和减少引用计数的 `release` 方法。
 =======
 在接口设计时，我要考虑某些意义上的平衡。在内存管理中也是这样，Objective-C 同时为我们提供了增加引用计数的 `retain` 和减少引用计数的 `release` 方法。
@@ -58,7 +59,13 @@
 >>>>>>> rebase branch 2
 >>>>>>> rebase branch
 >>>>>>> rebase master 2
+<<<<<<< HEAD
 >>>>>>> 更新文章
+=======
+=======
+在接口设计时，我要考虑某些意义上的平衡。在内存管理中也是这样，Objective-C 同时为我们提供了增加引用计数的 `retain` 和减少引用计数的 `release` 方法。
+>>>>>>> 更新 test
+>>>>>>> 更新 base newtimer
 
 这篇文章会在的。
 
